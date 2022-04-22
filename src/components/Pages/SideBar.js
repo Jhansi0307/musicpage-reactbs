@@ -45,17 +45,19 @@ function SideBar() {
         <div className="side-menu">
           <Nav vertical="true" className="list-unstyled pb-3">
             <NavItem>
-              <Accordion>
-                <Accordion.Item eventKey="0">
+              <Accordion >
+                <Accordion.Item eventKey="0" >
                   <Accordion.Header className="dashboardtext">
+                    
                     <AiFillDashboard className="mr-2" />
-                    <Link to="/dashboard">Dashboard</Link>
+                    <Link to="/dashboard" >Dashboard</Link>
                   </Accordion.Header>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header
                   className="dashboardtext"
                   >
+                    
                     <BsLayersFill className="mr-2" />
                     Applications
                   </Accordion.Header>
