@@ -19,9 +19,9 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
     <Routes>
     <Route  path="/" element={<Dashboard/>} />
       <Route  path="/dashboard" element={<Dashboard/>} />
-      <Route exact path="/application" element={<Applications />} />
+      <Route exact path="/applications" element={<Applications />} />
      
-      <Route exact path="/shopify" element={<Shopify/>} />
+      <Route exact path="/shopify" element={<Shopify/>} />d
       <Route exact path="/authenticationproviders" element={<Authenticationproviders/>}/>
       <Route exact path="/providers" element={<Providers/>}/>
    

@@ -1,0 +1,22 @@
+.sizeofapp {
+    height: 40px;
+    margin-right: 8px;
+    margin-left:5px;
+  }
+  .btnprops{
+      height:40px !important;
+      width:90px !important;
+      background-color:rgba(0, 225, 255, 0.702);
+      margin-left: 40px !important;
+      color:black;
+  }
+  .inputstyle{
+      width:150px;
+      border:1px solid grey;
+     
+      font-size: 20px;
+      padding:4px;
+      margin-left:430px !important;
+      height:30px;
+
+  }

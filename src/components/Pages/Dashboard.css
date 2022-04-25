@@ -1,0 +1,138 @@
+.dashboard-bg {
+  background-color: #fff;
+}
+
+.main-dashboard h3 {
+  color: #fff;
+  padding: 15px;
+}
+.header1 {
+  display: block;
+}
+.column {
+  float: left;
+
+  width: 50%;
+  padding: 11px;
+}
+Button {
+  height: 50px !important;
+  width: 190px !important;
+  color: white;
+  background-color: rgb(10, 10, 10);
+
+}
+
+.btncolor {
+  background-color: rgba(20, 190, 228, 0.892);
+  height: 40px;
+  width: 100px;
+}
+.btncolor:hover {
+  background-color: rgba(20, 190, 228, 0.892);
+}
+
+.btnproperty {
+  background-color: rgb(104, 208, 243);
+  color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgb(221, 202, 202);
+  text-decoration: none;
+}
+.btnproperty:hover {
+  background-color: rgba(20, 190, 228, 0.892);
+}
+
+.spacetobtn {
+  margin-right: 10px;
+}
+.spacetobtn1 {
+  margin-right: 130px;
+}
+.textsize {
+  font-size:20px !important
+}
+
+.marginspace {
+  margin-left: 165px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.spacetobtn{
+  margin-left: 200px;
+}
+
+
+
+.margintext{
+  
+  margin-left:240px !important;
+ background-color:rgba(20, 190, 228, 0.892);
+  width:70px !important;
+  height:40px !important;
+}
+.margintextshopify{
+  background-color:rgba(20, 190, 228, 0.892);
+  margin-left:220px !important;
+  height:40px !important;
+  width:70px !important;
+}
+.margintext1{
+  margin-left:299px !important;
+  width:70px !important;
+  height:40px !important;
+  background-color:rgba(211, 222, 222, 0.892);
+  border:1px solid grey !important;
+  color:black !important;
+  padding:5px;
+}
+
+.margintext2{
+  margin-left:345px !important;
+  width:70px !important;
+  background-color:rgba(211, 222, 222, 0.892);
+  border:1px solid grey !important;
+  height:40px !important;
+
+  color:black !important;
+}
+.authentext{
+  background-color:rgba(20, 190, 228, 0.892);
+  margin-left:119px !important;
+  height:40px !important;
+  width:70px !important;
+  
+}
+.providertext{
+  background-color:rgba(20, 190, 228, 0.892);
+  margin-left:269px !important;
+  height:40px !important;
+  width:70px !important;
+
+}
+.sizeoflo {
+  height: 40px;
+  margin-right: 8px;
+  margin-left:5px;
+}
+.margintext3{
+  background-color:rgba(211, 222, 222, 0.892);
+  border:1px solid grey !important;
+  margin-left:200px !important;
+  width:70px !important;
+  height:40px !important;
+  color:black !important;
+}
+.margintext4{
+  background-color:rgba(211, 222, 222, 0.892);
+  border:1px solid grey !important;
+  margin-left:320px !important;
+  width:70px !important;
+  height:40px !important;
+  color:black !important;
+}

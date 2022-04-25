@@ -12,17 +12,27 @@ body {
 }
 .margintext {
   padding: 5px;
-  border-radius: 50%;
-  border: 1px solid rgb(226, 217, 217);
-  background-color: #0288d1;
+ 
   margin-right: 10px;
 }
+.sizeoflogo {
+  height: 50px;
+  margin-left: 18px;
+  padding-top:10px;
+}
+.sizeoflshopify {
+  height: 18px;
+  margin-right: 8px;
+  margin-left:5px;
+}
 .dashboardtext {
-  font-size: 20px;
-  min-width: 280px;
+  font-size: 18px;
+  min-width:280px !important;
 
-  background-color: black;
-  text-decoration: none;
+  background-color: rgb(7, 8, 8);
+}
+.texthover:hover {
+  background-color:  #02b2d1;
 }
 a,
 a:hover,
@@ -37,10 +47,10 @@ a:focus {
 ----------------------------------------------------- */
 .sidebar {
   /* min-width: 250px; */
-  max-width: 300px;
-  background: #0f0f10;
+  max-width: 320px;
+  background-color: rgb(7, 8, 8);
   color: #fff;
-  padding: 5px;
+  /* padding: 5px; */
 
   margin-left: -250px;
   transition: all 0.5s;
@@ -73,20 +83,23 @@ a:focus {
 }
 
 .menu-open {
-  background: #0288d1;
+  background: #02b2d1;
 }
 
 .nav-item:hover {
   color: #f9faff;
-  background: #020202;
+  background: #0fa0c8c4;
 }
 .navitem:hover {
-  background: #06adf0;
+  background-color:  #02b2d1 !important;
+  font-weight: bold;
+  
+
 }
 
 .items-menu {
   color: #fff;
-  background: #0288d1;
+  background:  #02b2d1;
 }
 
 li a.dropdown-toggle::after {
@@ -96,14 +109,14 @@ li a.dropdown-toggle::after {
   top: 10%;
 }
 
-.sidebar-header > span {
+ .sidebar-header > span {
   position: relative;
   float: right;
   margin: 0.5em;
   font-size: 2rem;
   cursor: pointer;
   display: none;
-}
+} 
 .side-menu {
   height: calc(100vh - 130px);
   overflow-y: scroll;
@@ -114,12 +127,12 @@ li a.dropdown-toggle::after {
 }
 
 .side-menu::-webkit-scrollbar-thumb {
-  background: #0288d1;
+  background:  #02b2d1;
   border-radius: 3px;
 }
 
 .side-menu::-webkit-scrollbar-thumb:hover {
-  background: #0288d1;
+  background:  #02b2d1;
 }
 
 /* ---------------------------------------------------
@@ -157,3 +170,21 @@ li a.dropdown-toggle::after {
     left: 68%;
   }
 }
+Button:hover{
+  background:  #02b2d1 !important;
+
+ 
+
+
+ 
+}
+
+Button{
+  height: 50px;
+  width: 210px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-style: none !important;
+  border-width: none !important;
+}
+
