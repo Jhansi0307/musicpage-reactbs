@@ -6,13 +6,13 @@ import dashb_icon from "../images/Group 197@2x.png";
 const Dashboard = () => {
   return (
     <>
-      <div className="main-dashboard">
+      <div className="main-dashboard p-1">
         <h1 className="pr-3">
           <span>
             <img src={dashb_icon} className="sizeoflo mr-4" />
             Dashboard
           </span>
-          <hr />
+          <hr style={{ border: "1px solid grey" }} />
         </h1>
         <Row>
           <Col>
