@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import SideBar from "./components/Pages/SideBar";
-import Content from "./components/content/Content";
+import Content from "./components/Routers/Content";
 import "./App.css";
 
 const App = () => {

@@ -40,13 +40,17 @@ function SideBar() {
             <Accordion.Item eventKey="0">
               <Accordion.Header className="dashboardtext pt-1">
                 <img src={dashboard_icon} className="sizeoflshopify mr-4" />
-                <Link to="/dashboard" className="mr-2">Dashboard</Link>
+                <Link to="/dashboard" className="mr-2">
+                  Dashboard
+                </Link>
               </Accordion.Header>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
               <Accordion.Header className="dashboardtext pt-1">
                 <img src={application_icon} className="sizeoflshopify mr-4" />
-                <Link to="/applications" className="mr-2">Applications</Link>
+                <Link to="/applications" className="mr-2">
+                  Applications
+                </Link>
               </Accordion.Header>
               <Accordion.Body className="navitem">
                 <Link to="/applications">All Applications</Link>
@@ -57,8 +61,10 @@ function SideBar() {
             </Accordion.Item>
             <Accordion.Item eventKey="2">
               <Accordion.Header className="dashboardtext pt-1">
-                <img src={shopify_icon} className="sizeoflshopify mr-3 ml-3"  />
-                <Link to="/shopify" className="ml-1"> Shopify Stores</Link>
+                <img src={shopify_icon} className="sizeoflshopify mr-3 ml-3" />
+                <Link to="/shopify" className="ml-1">
+                  Shopify Stores
+                </Link>
               </Accordion.Header>
               <Accordion.Body className="navitem">
                 <Link to="/shopify">All Shopify Stores</Link>
@@ -80,13 +86,16 @@ function SideBar() {
                 </Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
-                <Link to="/autenticationproviders/addnew">Add New</Link>
+                <Link to="/authenticationproviders/addnew">Add New</Link>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">
               <Accordion.Header className="dashboardtext pt-1">
                 <img src={provider_icon} className="sizeoflshopify mr-4" />
-                <Link to="/providers" className="mr-5"> Providers</Link>
+                <Link to="/providers" className="mr-5">
+                  {" "}
+                  Providers
+                </Link>
               </Accordion.Header>
               <Accordion.Body className="navitem">
                 <Link to="/providers">All Providers</Link>
