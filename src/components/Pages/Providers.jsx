@@ -17,7 +17,7 @@ import "./Providers.css";
 function Providers() {
   return (
     <>
-      <div className="application-container">
+      <div className="application-container p-2">
         <h1 className="pr-3">
           <span>
             <img src={authentication_icon} className="sizeofapp mr-4" />
@@ -30,74 +30,75 @@ function Providers() {
           </span>
           <hr style={{ border: "1px solid grey" }} />
         </h1>
+        <div className="p-3">
+          <Table>
+            <thead className="borderstyle">
+              <tr>
+                <th className="namestyle">
+                  Name
+                  <IoMdArrowDropdown />
+                </th>
+                <th>Id</th>
+                <th className="ml-5">Provider Id</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="appname">Provider name</td>
+                <td>1</td>
+                <td>10342</td>
 
-        <Table>
-          <thead className="borderstyle">
-            <tr>
-              <th className="namestyle">
-                Name
-                <IoMdArrowDropdown />
-              </th>
-              <th>Id</th>
-              <th className="ml-5">Provider Id</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="appname">Provider name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Button className="btnedit">Edit</Button>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">Provider name</td>
+                <td>1</td>
+                <td>10342</td>
+                <td>
+                  <Button className="btnedit">Edit</Button>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">Provider name</td>
+                <td>1</td>
+                <td>10342</td>
 
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Provider name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Provider name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Button className="btnedit">Edit</Button>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">Provider name</td>
+                <td>1</td>
+                <td>10342</td>
 
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Provider name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Button className="btnedit">Edit</Button>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">Provider name</td>
+                <td>1</td>
+                <td>10342</td>
 
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Provider name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Button className="btnedit">Edit</Button>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">Provider name</td>
+                <td>1</td>
+                <td>10342</td>
 
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Provider name</td>
-              <td>1</td>
-              <td>10342</td>
-
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+                <td>
+                  <Button className="btnedit">Edit</Button>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </div>
       </div>
     </>
   );

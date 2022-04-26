@@ -8,7 +8,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function Authenticationprovider() {
   return (
     <>
-      <div className="application-container">
+      <div className="application-container p-2">
         <h1 className="pr-3">
           <span>
             <img src={authentication_icon} className="sizeofapp mr-4" />
@@ -22,6 +22,7 @@ function Authenticationprovider() {
           </span>
           <hr style={{ border: "1px solid grey" }} />
         </h1>
+        <div className="p-2">
         <Table>
           <thead className="borderstyle">
             <tr>
@@ -120,6 +121,7 @@ function Authenticationprovider() {
           </tbody>
         </Table>
         <hr />
+      </div>
       </div>
     </>
   );
