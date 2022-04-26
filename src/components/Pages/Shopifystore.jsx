@@ -50,7 +50,7 @@ function Shopifystore() {
               <td>10342</td>
 
               <td>
-                <Button className="btnedit">Edit</Button>
+                <Button className="btnedit outline-secondary">Edit</Button>
               </td>
             </tr>
             <tr>

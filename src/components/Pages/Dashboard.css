@@ -71,14 +71,14 @@ Button {
 
 .margintext{
   
-  margin-left:240px !important;
+  margin-left:245px !important;
  background-color:rgba(20, 190, 228, 0.892);
   width:70px !important;
   height:40px !important;
 }
 .margintextshopify{
   background-color:rgba(20, 190, 228, 0.892);
-  margin-left:220px !important;
+  margin-left:230px !important;
   height:40px !important;
   width:70px !important;
 }
@@ -86,7 +86,7 @@ Button {
   margin-left:299px !important;
   width:70px !important;
   height:40px !important;
-  background-color:rgba(211, 222, 222, 0.892);
+  background-color:white;
   border:1px solid grey !important;
   color:black !important;
   padding:5px;
@@ -95,7 +95,7 @@ Button {
 .margintext2{
   margin-left:345px !important;
   width:70px !important;
-  background-color:rgba(211, 222, 222, 0.892);
+  background-color:white;
   border:1px solid grey !important;
   height:40px !important;
 
@@ -103,14 +103,14 @@ Button {
 }
 .authentext{
   background-color:rgba(20, 190, 228, 0.892);
-  margin-left:119px !important;
+  margin-left:135px !important;
   height:40px !important;
   width:70px !important;
   
 }
 .providertext{
   background-color:rgba(20, 190, 228, 0.892);
-  margin-left:269px !important;
+  margin-left:273px !important;
   height:40px !important;
   width:70px !important;
 
@@ -121,15 +121,15 @@ Button {
   margin-left:5px;
 }
 .margintext3{
-  background-color:rgba(211, 222, 222, 0.892);
+  background-color:white;
   border:1px solid grey !important;
-  margin-left:200px !important;
+  margin-left:210px !important;
   width:70px !important;
   height:40px !important;
   color:black !important;
 }
 .margintext4{
-  background-color:rgba(211, 222, 222, 0.892);
+  background-color:white;
   border:1px solid grey !important;
   margin-left:320px !important;
   width:70px !important;
