@@ -17,7 +17,7 @@ import "./Providers.css";
 function Providers() {
   return (
     <>
-      <div className="application-container p-2">
+      <div className="main-dashboard">
         <h1 className="pr-3">
           <span>
             <img src={authentication_icon} className="sizeofapp mr-4" />
@@ -34,12 +34,12 @@ function Providers() {
           <Table>
             <thead className="borderstyle">
               <tr>
-                <th className="namestyle">
+                <th className="nameproperty">
                   Name
                   <IoMdArrowDropdown />
                 </th>
-                <th>Id</th>
-                <th className="ml-5">Provider Id</th>
+                <th className="nameproperty">Id</th>
+                <th className="nameproperty">Provider Id</th>
               </tr>
             </thead>
             <tbody>

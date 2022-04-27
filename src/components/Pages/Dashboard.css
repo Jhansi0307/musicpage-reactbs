@@ -2,9 +2,13 @@
   background-color: #fff;
 }
 
-.main-dashboard h3 {
+.main-dashboard  {
   color: #fff;
-  padding: 15px;
+  padding-left: 50px;
+  /* padding-right: 50px; */
+  color:black;
+  /* padding-top:-60px !important; */
+  margin:-10px;
 }
 .header1 {
   display: block;

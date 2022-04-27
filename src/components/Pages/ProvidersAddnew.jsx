@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 function ProvidersAddnew() {
   return (
     
-    <div className="shopify-stores">
+    <div className="main-dashboard">
 
       <h1 className="pr-3">
         <span>

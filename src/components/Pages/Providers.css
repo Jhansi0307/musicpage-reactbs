@@ -13,5 +13,9 @@
   
     opacity:0.5;
  }
-
- 
+.nameproperty{
+    padding:10px;
+}
+#root > div > div.content.container-fluid > div > div > table > thead > tr > th.nameproperty{
+    padding-right:140px;
+}

@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import shopify_icon from "../images/shopify_glyph@2x.png";
 function ShopiftStoresAddnew() {
   return (
-    <div className="shopify-stores">
+    <div className="main-dashboard">
       <h1 className="pr-3">
         <span>
           <img src={shopify_icon} alt="" className="sizeofapp mr-4" />

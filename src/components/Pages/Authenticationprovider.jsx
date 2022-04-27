@@ -8,7 +8,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function Authenticationprovider() {
   return (
     <>
-      <div className="application-container p-2">
+      <div className="main-dashboard">
         <h1 className="pr-3">
           <span>
             <img src={authentication_icon} className="sizeofapp mr-4" />

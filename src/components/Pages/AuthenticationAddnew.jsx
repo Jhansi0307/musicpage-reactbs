@@ -3,7 +3,7 @@ import provider_icon from "../images/Group 219.png";
 import { Form, Button } from "react-bootstrap";
 function AuthenticationAddnew() {
   return (
-    <div className="application-container">
+    <div className="main-dashboard">
       <h1 className="pr-3">
         <span>
           <img src={provider_icon} className="sizeofapp mr-4" />

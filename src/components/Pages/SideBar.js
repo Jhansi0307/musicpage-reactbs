@@ -34,15 +34,18 @@ function SideBar() {
           </span>
 
           <img src={umg_logo} className="sizeoflogo" />
+         
         </div>
         <div className="side-menu">
           <Accordion>
             <Accordion.Item eventKey="0">
-              <Accordion.Header className="dashboardtext pt-1">
-                <img src={dashboard_icon} className="sizeoflshopify mr-4" />
+              <Accordion.Header className="dashboardtext pt-3 ">
+                
+                <img src={dashboard_icon} className="sizeoflshopify mr-4 " />
                 <Link to="/dashboard" className="mr-2">
                   Dashboard
                 </Link>
+
               </Accordion.Header>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
@@ -52,7 +55,7 @@ function SideBar() {
                   Applications
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem">
+              <Accordion.Body className="navitem navitem1">
                 <Link to="/applications">All Applications</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
@@ -61,12 +64,12 @@ function SideBar() {
             </Accordion.Item>
             <Accordion.Item eventKey="2">
               <Accordion.Header className="dashboardtext pt-1">
-                <img src={shopify_icon} className="sizeoflshopify mr-3 ml-3" />
+                <img src={shopify_icon} className="sizeoflshopify mr-4 ml-1" />
                 <Link to="/shopify" className="ml-1">
                   Shopify Stores
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem">
+              <Accordion.Body className="navitem navitem1">
                 <Link to="/shopify">All Shopify Stores</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
@@ -74,13 +77,13 @@ function SideBar() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header className="dashboardtext pt-1">
-                <img src={provider_icon} className="sizeoflshopify mr-4" />
+              <Accordion.Header className="dashboardtext pt-1 ">
+                <img src={provider_icon} className="sizeoflshopify mr-2" />
                 <Link to="/authenticationproviders">
                   Authentication Providers
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem">
+              <Accordion.Body className="navitem navitem1">
                 <Link to="/authenticationproviders">
                   All Authentication Providers
                 </Link>
@@ -97,7 +100,7 @@ function SideBar() {
                   Providers
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem">
+              <Accordion.Body className="navitem navitem1">
                 <Link to="/providers">All Providers</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">

@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="main-dashboard">
-        <h1 className="pr-3 pb-2">
+        <h1 className="pr-3 pb-2  ">
           <span>
             <img src={dashb_icon} className="sizeoflo mr-4" />
             Dashboard

@@ -14,7 +14,7 @@ export default function Applications() {
 
   return (
     
-    <div className="application-container p-3">
+    <div className="main-dashboard">
       <h1 className="pr-3">
         <span>
           <img src={app_icon} className="sizeofapp mr-4" />

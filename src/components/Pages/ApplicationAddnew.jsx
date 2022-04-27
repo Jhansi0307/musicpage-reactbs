@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 function ApplicationAddnew() {
     
   return (
-    <div className="application-container p-1">
+    <div className="main-dashboard">
       <h1 className="pr-3">
 
         <span>
@@ -13,6 +13,10 @@ function ApplicationAddnew() {
         </span>
         <hr style={{ border: "1px solid grey" }} />
       </h1>
+
+
+
+      
       <div className="editapp">
         <Form>
           <Form.Group className="mb-3">

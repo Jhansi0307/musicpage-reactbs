@@ -21,13 +21,13 @@ body {
   padding-top:10px;
 }
 .sizeoflshopify {
-  height: 18px;
+  height: 22px;
   margin-right: 8px;
-  margin-left:5px;
+  margin-left:-25px;
 }
 .dashboardtext {
   font-size: 18px;
-  min-width:280px !important;
+  /* min-width:280px !important; */
 
   background-color: rgb(7, 8, 8);
 }
@@ -52,7 +52,7 @@ a:focus {
   color: #fff;
   /* padding: 5px; */
 
-  margin-left: -250px;
+  /* margin-left: -250px; */
   transition: all 0.5s;
 }
 
@@ -91,11 +91,18 @@ a:focus {
   background: #0fa0c8c4;
 }
 .navitem:hover {
-  background-color:  #02b2d1 !important;
+ 
   font-weight: bold;
+ 
   
 
-}
+/* }
+.navitem1{
+  /* font-family: bold; */
+  /* font-weight: bold ; */
+  
+
+} */
 
 .items-menu {
   color: #fff;
@@ -119,7 +126,7 @@ li a.dropdown-toggle::after {
 } 
 .side-menu {
   height: calc(100vh - 130px);
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .side-menu::-webkit-scrollbar {
@@ -181,10 +188,43 @@ Button:hover{
 
 Button{
   height: 50px;
-  width: 210px !important;
+  /* width: 210px !important; */
   padding: 0 !important;
   margin: 0 !important;
-  border-style: none !important;
+  border-style: none ;
   border-width: none !important;
 }
 
+#root > div > div.sidebar > div.side-menu > div > div:nth-child(1) > h2 > button{
+  width:290px !important;
+  margin-left:-35px !important;
+  /* background-color:#4FC3F7  ; */
+ border-top-style:  solid grey !important;
+ 
+  border-top-style:solid;
+}
+
+#root > div > div.sidebar > div.side-menu > div > div:nth-child(2) > h2 > button{
+  width:290px !important;
+  margin-left:-35px !important;
+}
+#root > div > div.sidebar > div.side-menu > div > div:nth-child(3) > h2 > button{
+  /* width:100% !important; */
+  width:310px !important;
+  margin-left:-55px !important;
+}
+#root > div > div.sidebar > div.side-menu > div > div:nth-child(4) > h2 > button{
+  width:255px !important;
+
+  /* width:100% !important; */
+  /* margin-left:10px !important; */
+  
+}
+#root > div > div.sidebar > div.side-menu > div > div:nth-child(5) > h2 > button{
+  width:290px !important;
+  margin-left:-35px !important;
+  border-style:none !important;
+}
+.btncolordash{
+  background-color: #02b2d1 !important;
+}

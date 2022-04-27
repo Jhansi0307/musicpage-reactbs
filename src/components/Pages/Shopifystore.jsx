@@ -18,7 +18,7 @@ import "./Shopifystores.css";
 function Shopifystore() {
   return (
     <>
-      <div className="application-container p-2">
+      <div className="main-dashboard">
         <h1 className="pr-3">
           <span>
             <img src={shopify_icon} className="sizeofapp mr-4" />
@@ -35,12 +35,12 @@ function Shopifystore() {
         <Table>
           <thead className="borderstyle">
             <tr>
-              <th>
+              <th className="nameproperty">
                 Name
                 <IoMdArrowDropdown />
               </th>
-              <th>Id</th>
-              <th className="ml-5">Secret</th>
+              <th className="nameproperty">Id</th>
+              <th className="nameproperty">Secret</th>
             </tr>
           </thead>
           <tbody>
