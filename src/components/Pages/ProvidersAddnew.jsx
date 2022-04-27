@@ -3,13 +3,11 @@ import providers_icon from "../images/Group 219.png";
 import { Form, Button } from "react-bootstrap";
 function ProvidersAddnew() {
   return (
-    
     <div className="main-dashboard">
-
       <h1 className="pr-3">
         <span>
           <img src={providers_icon} alt="" className="sizeofapp mr-4" />
-          Edit Provider
+          Add/Edit Provider
         </span>
         <hr style={{ border: "1px solid grey" }} />
       </h1>

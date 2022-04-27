@@ -1,5 +1,5 @@
 import React from "react";
-import app_icon from "../images/Group 219.png";
+import app_icon from "../images/Group 203@2x.png"
 import { Form, Button } from "react-bootstrap";
 function ApplicationAddnew() {
     
@@ -9,7 +9,7 @@ function ApplicationAddnew() {
 
         <span>
           <img src={app_icon} className="sizeofapp mr-4" />
-          Edit Applications
+        Add/Edit Applications
         </span>
         <hr style={{ border: "1px solid grey" }} />
       </h1>

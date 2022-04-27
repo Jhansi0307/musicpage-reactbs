@@ -7,12 +7,7 @@ import {
 import { AiFillDashboard } from "react-icons/ai";
 import { RiShoppingBagFill } from "react-icons/ri";
 import {
-  NavLink,
-  Nav,
-  NavItem,
-  Dropdown,
   Accordion,
-  Button,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import umg_logo from "../images/umg_logo.png";
@@ -40,7 +35,7 @@ function SideBar() {
           <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header className="dashboardtext pt-3 ">
-                
+
                 <img src={dashboard_icon} className="sizeoflshopify mr-4 " />
                 <Link to="/dashboard" className="mr-2">
                   Dashboard

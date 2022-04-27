@@ -7,7 +7,7 @@ function ShopiftStoresAddnew() {
       <h1 className="pr-3">
         <span>
           <img src={shopify_icon} alt="" className="sizeofapp mr-4" />
-          Edit Shopify Store
+          Add/Edit Shopify Store
         </span>
 
         <hr style={{ border: "1px solid grey" }} />

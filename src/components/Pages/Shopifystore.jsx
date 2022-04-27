@@ -50,7 +50,9 @@ function Shopifystore() {
               <td>10342</td>
 
               <td>
-                <Button className="btnedit outline-secondary">Edit</Button>
+              <Link to="/shopify/addnew">
+                <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
@@ -58,25 +60,9 @@ function Shopifystore() {
               <td>1</td>
               <td>10342</td>
               <td>
+                <Link to="/shopify/addnew">
                 <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
-
-              <td>
-                <Button className="btnedit">Edit</Button>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
-
-              <td>
-                <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
@@ -85,7 +71,9 @@ function Shopifystore() {
               <td>10342</td>
 
               <td>
+              <Link to="/shopify/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
@@ -94,7 +82,31 @@ function Shopifystore() {
               <td>10342</td>
 
               <td>
+              <Link to="/shopify/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
+              </td>
+            </tr>
+            <tr>
+              <td className="appname">Store name</td>
+              <td>1</td>
+              <td>10342</td>
+
+              <td>
+              <Link to="/shopify/addnew">
+                <Button className="btnedit">Edit</Button>
+                </Link>
+              </td>
+            </tr>
+            <tr>
+              <td className="appname">Store name</td>
+              <td>1</td>
+              <td>10342</td>
+
+              <td>
+               <Link to="/shopify/addnew">
+                <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
           </tbody>
