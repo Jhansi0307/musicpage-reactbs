@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import shopify_icon from "../images/shopify_glyph@2x.png";
+import {Link} from "react-router-dom"
 function ShopiftStoresAddnew() {
   return (
     <div className="main-dashboard">
@@ -37,9 +38,11 @@ function ShopiftStoresAddnew() {
         </Form.Group>
 
         <div>
+          <Link to="/shopify">
           <Button className="btnsize btnedit" type="submit">
             Cancel
           </Button>
+          </Link>
           <Button className="ml-3 btnsize1" variant="primary" type="submit">
             Save
           </Button>

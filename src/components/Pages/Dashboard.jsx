@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillDashboard } from "react-icons/ai";
 import "./Dashboard.css";
 import { Button, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import dashb_icon from "../images/Group 197@2x.png";
 const Dashboard = () => {
   return (
@@ -18,98 +19,152 @@ const Dashboard = () => {
           <Row>
             <Col>
               <span className="textsize">Applications-Recent</span>
-              <Button className="margintext">View All</Button>
+              <Link to="/applications">
+                <Button className="margintext">View All</Button>
+              </Link>
               <hr />
             </Col>
             <Col>
               <span className="textsize"> Shopify Stores-Recent</span>
-
-              <Button className="margintextshopify"> View All</Button>
+              <Link to="/shopify">
+                <Button className="margintextshopify"> View All</Button>
+              </Link>
               <hr />
             </Col>
           </Row>
           <Row>
             <Col>
+            <Link to="/applications/viewapplications">
               Application Name
-              <Button className="margintext1">Edit</Button>
+              </Link>
+              
+      
+              <Link to="/applications/addnew">
+                <Button className="margintext1">Edit</Button>
+              </Link>
               <hr />
             </Col>
             <Col>
+            <Link to="/shopify/viewshopify">
               Store Name
-              <Button className="margintext2">Edit</Button>
+              </Link>
+              <Link to="/shopify/addnew">
+                    <Button className="margintext2">Edit</Button>
+                  </Link>
               <hr />
             </Col>
           </Row>
           <Row>
             <Col>
+           
+            <Link to="/applications/viewapplications">
               Application Name
-              <Button className="margintext1">Edit</Button>
+              </Link>
+              <Link to="/applications/addnew">
+                <Button className="margintext1">Edit</Button>
+              </Link>
               <hr />
             </Col>
             <Col>
+            <Link to="/shopify/viewshopify">
               Store Name
-              <Button className="margintext2">Edit</Button>
+              </Link>
+              <Link to="/shopify/addnew">
+                    <Button className="margintext2">Edit</Button>
+                  </Link>
               <hr />
             </Col>
           </Row>
           <Row className="mb-5">
             <Col>
+            <Link to="/applications/viewapplications">
               Application Name
-              <Button className="margintext1">Edit</Button>
+              </Link>
+              <Link to="/applications/addnew">
+                <Button className="margintext1">Edit</Button>
+              </Link>
               <hr />
             </Col>
             <Col>
+            <Link to="/shopify/viewshopify">
               Store Name
-              <Button className="margintext2">Edit</Button>
+              </Link>
+              <Link to="/shopify/addnew">
+                    <Button className="margintext2">Edit</Button>
+                  </Link>
               <hr />
             </Col>
           </Row>
           <Row>
             <Col>
               <span className="textsize">Authentication Providers-Recent</span>
-              <Button className="authentext">View All</Button>
+              <Link to="/authenticationproviders">
+                <Button className="authentext">View All</Button>
+              </Link>
               <hr />
             </Col>
             <Col>
               <span className="textsize">Providers-Recent</span>
-
-              <Button className="providertext"> View All</Button>
+              <Link to="/providers">
+                <Button className="providertext"> View All</Button>
+              </Link>
               <hr />
             </Col>
           </Row>
           <Row>
             <Col>
-              Authentication Provider Name
-              <Button className="margintext3">Edit</Button>
+            <Link to="/authenticationproviders/viewauthentication">
+              Authentication Provider Name</Link>
+              <Link to="/authenticationproviders/addnew">
+                <Button className="margintext3">Edit</Button>
+                </Link>
               <hr />
             </Col>
             <Col>
+            <Link to="/providers/viewproviders">
               Provider Name
-              <Button className="margintext4">Edit</Button>
+              </Link>
+              <Link to="/providers/addnew">
+                    <Button className="margintext4">Edit</Button>
+                  </Link>
               <hr />
             </Col>
           </Row>
           <Row>
             <Col>
-              Authentication Provider Name
-              <Button className="margintext3">Edit</Button>
+            <Link to="/authenticationproviders/viewauthentication">
+              Authentication Provider Name</Link>
+              <Link to="/authenticationproviders/addnew">
+                <Button className="margintext3">Edit</Button>
+                </Link>
               <hr />
             </Col>
             <Col>
+            <Link to="/providers/viewproviders">
               Provider Name
-              <Button className="margintext4">Edit</Button>
+              </Link>
+              <Link to="/providers/addnew">
+                    <Button className="margintext4">Edit</Button>
+                  </Link>
               <hr />
             </Col>
           </Row>
           <Row>
             <Col>
-              Authentication Provider Name
-              <Button className="margintext3">Edit</Button>
+            <Link to="/authenticationproviders/viewauthentication">
+              Authentication Provider Name</Link>
+              <Link to="/authenticationproviders/addnew">
+                <Button className="margintext3">Edit</Button>
+                </Link>
               <hr />
             </Col>
             <Col>
+            <Link to="/providers/viewproviders">
               Provider Name
-              <Button className="margintext4">Edit</Button>
+              </Link>
+              <Link to="/providers/addnew">
+                    <Button className="margintext4">Edit</Button>
+                  </Link>
               <hr />
             </Col>
           </Row>

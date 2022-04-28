@@ -31,86 +31,140 @@ function Shopifystore() {
           </span>
           <hr style={{ border: "1px solid grey" }} />
         </h1>
-<div className="p-3">
-        <Table>
-          <thead className="borderstyle">
-            <tr>
-              <th className="nameproperty">
-                Name
-                <IoMdArrowDropdown />
-              </th>
-              <th className="nameproperty">Id</th>
-              <th className="nameproperty">Secret</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
+        <div className="p-3">
+          <Table>
+            <thead className="borderstyle">
+              <tr>
+                <th className="nameproperty">
+                  Name
+                  <IoMdArrowDropdown />
+                </th>
+                <th className="nameproperty">Id</th>
+                <th className="nameproperty">Secret</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
 
-              <td>
-              <Link to="/shopify/addnew">
-                <Button className="btnedit">Edit</Button>
-                </Link>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>
-                <Link to="/shopify/addnew">
-                <Button className="btnedit">Edit</Button>
-                </Link>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Link to="/shopify/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
+                <td>
+                  <Link to="/shopify/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
 
-              <td>
-              <Link to="/shopify/addnew">
-                <Button className="btnedit">Edit</Button>
-                </Link>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Link to="/shopify/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
 
-              <td>
-              <Link to="/shopify/addnew">
-                <Button className="btnedit">Edit</Button>
-                </Link>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Link to="/shopify/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
 
-              <td>
-              <Link to="/shopify/addnew">
-                <Button className="btnedit">Edit</Button>
-                </Link>
-              </td>
-            </tr>
-            <tr>
-              <td className="appname">Store name</td>
-              <td>1</td>
-              <td>10342</td>
+                <td>
+                  <Link to="/shopify/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
 
-              <td>
-               <Link to="/shopify/addnew">
-                <Button className="btnedit">Edit</Button>
-                </Link>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+                <td>
+                  <Link to="/shopify/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
         </div>
       </div>
     </>

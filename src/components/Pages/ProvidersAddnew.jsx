@@ -1,6 +1,7 @@
 import React from "react";
 import providers_icon from "../images/Group 219.png";
 import { Form, Button } from "react-bootstrap";
+import {Link} from "react-router-dom"
 function ProvidersAddnew() {
   return (
     <div className="main-dashboard">
@@ -34,9 +35,11 @@ function ProvidersAddnew() {
           <Form.Control className="sizeoflabel" type="text" />
         </Form.Group>
         <div>
+          <Link to="/providers">
           <Button className="btnsize btnedit" type="submit">
             Cancel
           </Button>
+          </Link>
           <Button className="ml-3 btnsize1" variant="primary" type="submit">
             Save
           </Button>

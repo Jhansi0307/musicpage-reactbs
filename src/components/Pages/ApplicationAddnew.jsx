@@ -1,22 +1,18 @@
 import React from "react";
-import app_icon from "../images/Group 203@2x.png"
+import app_icon from "../images/Group 203@2x.png";
 import { Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function ApplicationAddnew() {
-    
   return (
     <div className="main-dashboard">
       <h1 className="pr-3">
-
         <span>
           <img src={app_icon} className="sizeofapp mr-4" />
-        Add/Edit Applications
+          Add/Edit Applications
         </span>
         <hr style={{ border: "1px solid grey" }} />
       </h1>
 
-
-
-      
       <div className="editapp">
         <Form>
           <Form.Group className="mb-3">
@@ -63,10 +59,16 @@ function ApplicationAddnew() {
             <Form.Control className="sizeoflabel" type="text" />
           </Form.Group>
           <div>
-            <Button className="btnsize btnedit" type="submit">
-              Cancel
-            </Button>
-            <Button className="ml-3 mr-5 btnsize1" variant="primary" type="submit">
+            <Link to="/applications">
+              <Button className="btnsize btnedit" type="submit">
+                Cancel
+              </Button>
+            </Link>
+            <Button
+              className="ml-3 mr-5 btnsize1"
+              variant="primary"
+              type="submit"
+            >
               Save
             </Button>
           </div>

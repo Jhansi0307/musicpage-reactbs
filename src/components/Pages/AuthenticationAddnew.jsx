@@ -1,13 +1,14 @@
 import React from "react";
 import provider_icon from "../images/Group 219.png";
 import { Form, Button } from "react-bootstrap";
+import {Link} from "react-router-dom"
 function AuthenticationAddnew() {
   return (
     <div className="main-dashboard">
       <h1 className="pr-3">
         <span>
           <img src={provider_icon} className="sizeofapp mr-4" />
-          Edit Authentication Provider
+        Add/Edit Authentication Provider
         </span>
         <hr style={{ border: "1px solid grey" ,marginBottom:-20}} />
       </h1>
@@ -74,9 +75,11 @@ function AuthenticationAddnew() {
             <Form.Control className="sizeoflabel" type="text" />
           </Form.Group>
           <div>
+            <Link to="/authenticationproviders">
             <Button className="btnsize btnedit" type="submit">
               Cancel
             </Button>
+            </Link>
             <Button
               className="ml-3 mr-5 btnsize1"
               variant="primary"

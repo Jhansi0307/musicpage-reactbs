@@ -44,67 +44,122 @@ function Providers() {
             </thead>
             <tbody>
               <tr>
-                <td className="appname">Provider name</td>
-                <td>1</td>
-                <td>10342</td>
+                <td className="appname">
+                  
+                  <Link className="width" to="/providers/viewproviders">Provider name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">10342</Link>
+                </td>
 
                 <td>
                   <Link to="/providers/addnew">
-                  <Button className="btnedit">Edit</Button>
+                    <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
               </tr>
               <tr>
-                <td className="appname">Provider name</td>
-                <td>1</td>
-                <td>10342</td>
+                <td className="appname">
+                  {" "}
+                  <Link to="/providers/viewproviders">Provider name</Link>
+                </td>
                 <td>
-                <Link to="/providers/addnew">
-                  <Button className="btnedit">Edit</Button>
-                  </Link>
+                  {" "}
+                  <Link to="/providers/viewproviders">1</Link>
                 </td>
-              </tr>
-              <tr>
-                <td className="appname">Provider name</td>
-                <td>1</td>
-                <td>10342</td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">10342</Link>
+                </td>
 
                 <td>
-                <Link to="/providers/addnew">
-                  <Button className="btnedit">Edit</Button>
+                  <Link to="/providers/addnew">
+                    <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
               </tr>
               <tr>
-                <td className="appname">Provider name</td>
-                <td>1</td>
-                <td>10342</td>
+                <td className="appname">
+                  {" "}
+                  <Link to="/providers/viewproviders">Provider name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">10342</Link>
+                </td>
 
                 <td>
-                <Link to="/providers/addnew">
-                  <Button className="btnedit">Edit</Button>
+                  <Link to="/providers/addnew">
+                    <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
               </tr>
               <tr>
-                <td className="appname">Provider name</td>
-                <td>1</td>
-                <td>10342</td>
+                <td className="appname">
+                  {" "}
+                  <Link to="/providers/viewproviders">Provider name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">10342</Link>
+                </td>
 
                 <td>
-                <Link to="/providers/addnew">
-                  <Button className="btnedit">Edit</Button>
+                  <Link to="/providers/addnew">
+                    <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
               </tr>
               <tr>
-                <td className="appname">Provider name</td>
-                <td>1</td>
-                <td>10342</td>
+                <td className="appname">
+                  {" "}
+                  <Link to="/providers/viewproviders">Provider name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">10342</Link>
+                </td>
 
                 <td>
-                <Link to="/providers/addnew">
-                  <Button className="btnedit">Edit</Button>
+                  <Link to="/providers/addnew">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/providers/viewproviders">Provider name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/providers/viewproviders">10342</Link>
+                </td>
+
+                <td>
+                  <Link to="/providers/addnew">
+                    <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
               </tr>

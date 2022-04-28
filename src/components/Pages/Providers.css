@@ -19,3 +19,8 @@
 #root > div > div.content.container-fluid > div > div > table > thead > tr > th.nameproperty{
     padding-right:140px;
 }
+
+
+.width{
+    width:250px;
+}

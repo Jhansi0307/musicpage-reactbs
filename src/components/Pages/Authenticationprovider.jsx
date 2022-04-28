@@ -41,81 +41,93 @@ function Authenticationprovider() {
           </thead>
           <tbody>
             <tr>
-              <td className="appname">Application name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>8892</td>
-              <td>8892</td>
-              <td>882</td>
-              <td>True</td>
-              <td>State</td>
+              <td className="appname"><Link to="/authenticationproviders/viewauthentication">Application name</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">1</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">10342</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">882</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">True</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">State</Link></td>
               <td>
+              <Link to="/authenticationproviders/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
-              <td className="appname">Application name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>8892</td>
-              <td>8892</td>
-              <td>882</td>
-              <td>True</td>
-              <td>State</td>
+            <td className="appname"><Link to="/authenticationproviders/viewauthentication">Application name</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">1</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">10342</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">882</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">True</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">State</Link></td>
               <td>
+              <Link to="/authenticationproviders/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
-              <td className="appname">Application name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>8892</td>
-              <td>8892</td>
-              <td>882</td>
-              <td>True</td>
-              <td>State</td>
+            <td className="appname"><Link to="/authenticationproviders/viewauthentication">Application name</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">1</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">10342</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">882</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">True</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">State</Link></td>
               <td>
+                <Link to="/authenticationproviders/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
-              <td className="appname">Application name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>8892</td>
-              <td>882</td>
-              <td>882</td>
-              <td>False</td>
-              <td>State</td>
+            <td className="appname"><Link to="/authenticationproviders/viewauthentication">Application name</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">1</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">10342</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">882</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">True</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">State</Link></td>
               <td>
+              <Link to="/authenticationproviders/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
-              <td className="appname">Application name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>8892</td>
-              <td>8892</td>
-              <td>882</td>
-              <td>True</td>
-              <td>State</td>
+            <td className="appname"><Link to="/authenticationproviders/viewauthentication">Application name</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">1</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">10342</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">882</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">True</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">State</Link></td>
               <td>
+              <Link to="/authenticationproviders/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
             <tr>
-              <td className="appname">Application name</td>
-              <td>1</td>
-              <td>10342</td>
-              <td>8892</td>
-              <td>8892</td>
-              <td>882</td>
-              <td>False</td>
-              <td>State</td>
+            <td className="appname"><Link to="/authenticationproviders/viewauthentication">Application name</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">1</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">10342</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">8892</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">882</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">True</Link></td>
+              <td><Link to="/authenticationproviders/viewauthentication">State</Link></td>
               <td>
+              <Link to="/authenticationproviders/addnew">
                 <Button className="btnedit">Edit</Button>
+                </Link>
               </td>
             </tr>
           </tbody>

@@ -12,6 +12,11 @@ import ApplicationAddnew from "../Pages/ApplicationAddnew";
 import ShopifyStoresAddnew from "../Pages/ShopiftStoresAddnew";
 import ProvidersAddnew from "../Pages/ProvidersAddnew";
 import AuthenticationAddnew from "../Pages/AuthenticationAddnew";
+
+import ViewShopify from "../Pages/ViewShopify";
+import ViewAuthentication from "../Pages/ViewAuthentication";
+import ViewApplication from "../Pages/ViewApplication";
+import ViewProviders from "../Pages/ViewProviders";
 const Content = ({ sidebarIsOpen, toggleSidebar }) => (
   <Container
     fluid
@@ -28,9 +33,19 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
         path="/applications/addnew"
         element={<ApplicationAddnew />}
       />
+
+ <Route
+        exact
+        path="/applications/viewapplications"
+        element={<ViewApplication/>}
+      />
+      
       <Route exact path="/shopify" element={<Shopify />} />
 
       <Route exact path="/shopify/addnew" element={<ShopifyStoresAddnew />} />
+
+
+      <Route exact path="/shopify/viewshopify" element={<ViewShopify/>} />
       <Route
         exact
         path="/authenticationproviders"
@@ -41,8 +56,14 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
         path="/authenticationproviders/addnew"
         element={<AuthenticationAddnew/>}
       />
+      <Route
+        exact
+        path="/authenticationproviders/viewauthentication"
+        element={<ViewAuthentication/>}
+      />
       <Route exact path="/providers" element={<Providers />} />
       <Route exact path="/providers/addnew" element={<ProvidersAddnew />} />
+      <Route exact path="/providers/viewproviders" element={<ViewProviders />} />
     </Routes>
   </Container>
 );

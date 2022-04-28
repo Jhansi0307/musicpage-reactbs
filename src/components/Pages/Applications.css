@@ -13,6 +13,8 @@
       background-color:rgba(0, 225, 255, 0.702);
       margin-left: 40px !important;
       color:black;
+      border-style: none !important;
+
   }
   .inputstyle{
       width:150px;
@@ -35,7 +37,7 @@
     margin-left:100px !important;
     width:90px !important;
     background-color:white;
-    border:2px solid grey !important;
+    border:1px solid grey !important;
     height:40px !important;
   
     color:black !important;
@@ -77,3 +79,43 @@
 .text-muted{
     opacity: 0.5;
 }
+.applicationedit-container{
+    padding:0px;
+    margin: -20px !important;
+    padding-top:-10px;
+   height:68px;
+
+    background-color:black;
+}
+.textcolor{
+    color:white;
+}
+.sizeofumg {
+    height: 30px;
+    margin-left: 18px;
+    padding-left:50px;
+  }
+  .sizeofslash{
+ font-size:large
+
+  }
+#root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(1) > td:nth-child(7) > a > button:hover{
+background-color:white !important;
+  }
+#root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(2) > td:nth-child(7) > a > button:hover{
+    background-color:white !important;
+      }
+#root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(3) > td:nth-child(7) > a > button:hover{
+        background-color:white !important;
+          }
+#root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(4) > td:nth-child(7) > a > button:hover{
+            background-color:white !important;
+              }
+#root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(5) > td:nth-child(7) > a > button:hover{
+                background-color:white !important;
+                  }
+ #root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(6) > td:nth-child(7) > a > button:hover{
+                    background-color:white !important;
+                      }
+                          
+
