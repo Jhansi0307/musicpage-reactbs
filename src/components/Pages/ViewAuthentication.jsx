@@ -14,27 +14,28 @@ function ViewAuthentication() {
       <Form>
       <Form>
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label className="textspace1">Name</Form.Label>
               <Form.Text>Application Name</Form.Text>
               <hr />
-              <Form.Label>ID</Form.Label>
+              <Form.Label className="textspace1">ID</Form.Label>
               <Form.Text>1</Form.Text>
               <hr />
-              <Form.Label>Provider ID</Form.Label>
+              <Form.Label className="textspace1">Provider ID</Form.Label>
               <Form.Text>10342</Form.Text>
-              <Form.Label>Client ID</Form.Label>
+              <hr/>
+              <Form.Label className="textspace1">Client ID</Form.Label>
               <Form.Text>8892</Form.Text>
               <hr />
-              <Form.Label>Client Secret</Form.Label>
+              <Form.Label className="textspace1">Client Secret</Form.Label>
               <Form.Text>8892</Form.Text>
               <hr />
-              <Form.Label>Application IDs</Form.Label>
+              <Form.Label className="textspace1">Application IDs</Form.Label>
               <Form.Text>882</Form.Text>
               <hr />
-              <Form.Label>Is Global</Form.Label>
+              <Form.Label className="textspace1">Is Global</Form.Label>
               <Form.Text>True</Form.Text>
               <hr/>
-              <Form.Label>State</Form.Label>
+              <Form.Label className="textspace1">State</Form.Label>
               <Form.Text>active</Form.Text>
               <hr />
             </Form.Group>

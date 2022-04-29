@@ -170,12 +170,7 @@ li a.dropdown-toggle::after {
   }
 }
 Button:hover{
-  background:  #02b2d1 !important;
-
- 
-
-
- 
+  background:  #02b2d1 !important; 
 }
 
 Button{

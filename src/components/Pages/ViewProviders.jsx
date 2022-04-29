@@ -13,13 +13,13 @@ function ViewProviders() {
     <div className="pt-3">
       <Form>
         <Form.Group>
-          <Form.Label>Name</Form.Label>
+          <Form.Label className="textspace1">Name</Form.Label>
           <Form.Text>Provider Name</Form.Text>
           <hr />
-          <Form.Label>ID</Form.Label>
+          <Form.Label className="textspace1">ID</Form.Label>
           <Form.Text>1</Form.Text>
           <hr />
-          <Form.Label>Provider ID</Form.Label>
+          <Form.Label className="textspace1">Provider ID</Form.Label>
           <Form.Text>10342</Form.Text>
           <hr/>
         </Form.Group>

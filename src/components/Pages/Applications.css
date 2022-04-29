@@ -59,6 +59,12 @@
       opacity: 0.8;
       font-family: Arial;
   }
+  .textspace1{
+    /* margin-left: 252px ; */
+    font-weight: bold;
+    /* opacity: 0.8; */
+    /* font-family: Arial; */
+}
   .btnsize{
       margin-left:545px !important;
       height:30px !important;
@@ -119,3 +125,8 @@ background-color:white !important;
                       }
                           
 
+
+
+                      #root > div > div.content.container-fluid > div > div > form > div:nth-child(7) > a > button:hover{
+                        background-color:white !important;
+                      }

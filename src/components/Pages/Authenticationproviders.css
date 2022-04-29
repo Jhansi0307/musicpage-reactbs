@@ -25,3 +25,7 @@
 #root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(6) > td:nth-child(9) > a > button:hover{
     background-color: white !important;
 }
+
+#root > div > div.content.container-fluid > div > div > form > div:nth-child(10) > a > button:hover{
+    background-color:white !important;
+}

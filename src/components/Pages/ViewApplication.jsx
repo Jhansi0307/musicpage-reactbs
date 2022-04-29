@@ -14,22 +14,22 @@ function ViewApplication() {
         <div className="pt-3">
           <Form>
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label  className="textspace1">Name</Form.Label>
               <Form.Text>Application Name</Form.Text>
               <hr />
-              <Form.Label>ID</Form.Label>
+              <Form.Label  className="textspace1">ID</Form.Label>
               <Form.Text>1</Form.Text>
               <hr />
-              <Form.Label>Client ID</Form.Label>
+              <Form.Label  className="textspace1">Client ID</Form.Label>
               <Form.Text>10342</Form.Text>
               <hr />
-              <Form.Label>Client Secret</Form.Label>
+              <Form.Label  className="textspace1">Client Secret</Form.Label>
               <Form.Text>8892</Form.Text>
               <hr />
-              <Form.Label>Redirect URLs</Form.Label>
+              <Form.Label  className="textspace1">Redirect URLs</Form.Label>
               <Form.Text>https://www.umusic.com</Form.Text>
               <hr />
-              <Form.Label>State</Form.Label>
+              <Form.Label  className="textspace1">State</Form.Label>
               <Form.Text>active</Form.Text>
               <hr />
             </Form.Group>
