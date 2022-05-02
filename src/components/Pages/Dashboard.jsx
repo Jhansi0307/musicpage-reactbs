@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillDashboard } from "react-icons/ai";
 import "./Dashboard.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Nav, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import dashb_icon from "../images/Group 197@2x.png";
 const Dashboard = () => {
@@ -43,59 +43,68 @@ const Dashboard = () => {
           </Row>
           <Row>
             <Col>
-              Application Name
+            <Link to="/applications/viewapplications">
+                  Application Name
+                </Link>
+                <Link to="/applications/add">
               <Button className="margintext3">Edit</Button>
+              </Link>
               <hr/>
             </Col>
             <Col>
-              Store Name
-              <Button
-               className="margintext2"
+            <Link to="/shopify/viewshopify">Store Name</Link>
+            <Link to="/shopify/add">
+            <Button
+                className="margintext2"
               >
                 Edit
               </Button>
+              </Link>
               <hr/>
             </Col>
           </Row>
           <Row style={{ backgroundColor: "white" }}>
             <Col>
-              Application Name
-              <Button
-                 className="margintext3"
-              >
-                {" "}
-                Edit{" "}
-              </Button>
+            <Link to="/applications/viewapplications">
+                  Application Name
+                </Link>
+                <Link to="/applications/add">
+              <Button className="margintext3">Edit</Button>
+              </Link>
               <hr />
             </Col>
             <Col>
-              Store Name
-              <Button
-              className="margintext2"
+            <Link to="/shopify/viewshopify">Store Name</Link>
+            <Link to="/shopify/add">
+            <Button
+                className="margintext2"
               >
                 Edit
               </Button>
+              </Link>
               <hr/>
             </Col>
           </Row>
           <Row style={{ backgroundColor: "white" }}>
             <Col>
-              Application Name
-              <Button
-                className="margintext3"
-              >
-                {" "}
-                Edit{" "}
-              </Button>
-              <hr style={{ width: "450px" }} />
+            <Link to="/applications/viewapplications">
+                  Application Name
+                </Link>
+                <Link to="/applications/add">
+              <Button className="margintext3">Edit</Button>
+              </Link>
+              <hr />
             </Col>
             <Col>
-              Store Name
+            <Link to="/shopify/viewshopify">Store Name</Link>
+
+            <Link to="/shopify/add">
               <Button
                 className="margintext2"
               >
                 Edit
               </Button>
+              </Link>
               <hr/>
             </Col>
           </Row>
@@ -129,64 +138,91 @@ const Dashboard = () => {
 
           <Row style={{ backgroundColor: "white" }}>
             <Col>
-              Authenticationprovider Name
-              <Button
-                className="authentext"
-              >
-                {" "}
-                Edit{" "}
-              </Button>
-              <hr/>
-            </Col>
-            <Col>
-              Provider Name
-              <Button
-                className="providertext"
-              >
-                Edit
-              </Button>
-              <hr style={{ width: "482px" }} />
-            </Col>
-          </Row>
-          <Row style={{ backgroundColor: "white" }}>
-            <Col>
-              Authenticationprovider Name
+            <Link to="/authenticationproviders/viewauthentication">
+                  Authentication Provider Name
+                </Link>
+
+                <Link to="/authenticationproviders/add">
               <Button
                  className="authentext"
               >
-                {" "}
-                Edit{" "}
-              </Button>
-              <hr style={{ width: "450px" }} />
-            </Col>
-            <Col>
-              Provider Name
-              <Button
-                className="providertext"
-              >
+
                 Edit
               </Button>
+              </Link>
+              <hr/>
+            </Col>
+            <Col>
+            <Link to="/providers/viewproviders">Provider Name</Link>
+
+              <Link to="/providers/add">
+                
+               
+                <Button
+                className="providertext"
+                >
+                  Edit
+                </Button>
+                </Link>
               <hr/>
             </Col>
           </Row>
           <Row style={{ backgroundColor: "white" }}>
             <Col>
-              Authenticationprovider Name
+            <Link to="/authenticationproviders/viewauthentication">
+                  Authentication Provider Name
+                </Link>
+                <Link to="/authenticationproviders/add">
               <Button
                  className="authentext"
               >
-                {" "}
-                Edit{" "}
+
+                Edit
               </Button>
+              </Link>
               <hr />
             </Col>
             <Col>
-              Provider Name
+            <Link to="/providers/viewproviders">Provider Name</Link>
+
+              <Link to="/providers/add">
+                
+               
               <Button
               className="providertext"
               >
                 Edit
               </Button>
+              </Link>
+              <hr/>
+            </Col>
+          </Row>
+          <Row style={{ backgroundColor: "white" }}>
+            <Col>
+            <Link to="/authenticationproviders/viewauthentication">
+                  Authentication Provider Name
+                </Link>
+                <Link to="/authenticationproviders/add">
+              <Button
+                 className="authentext"
+              >
+               Edit
+              </Button>
+              </Link>
+              <hr />
+            </Col>
+            <Col>
+            <Link to="/providers/viewproviders">Provider Name</Link>
+
+              <Link to="/providers/add">
+                
+               
+              <Button
+              className="providertext"
+              >
+                Edit
+              </Button>
+              </Link>
               <hr style={{ width: "482px" }} />
             </Col>
           </Row>
