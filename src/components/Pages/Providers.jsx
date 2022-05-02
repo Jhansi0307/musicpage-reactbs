@@ -22,7 +22,7 @@ function Providers() {
           <span>
             <img src={authentication_icon} className="sizeofapp mr-4" />
             Providers
-            <Link to="/providers/addnew">
+            <Link to="/providers/add">
               <Button className="btnprops">Add new</Button>
             </Link>
             <input type="search" placeholder="Search" className="inputstyle2" />
@@ -58,7 +58,7 @@ function Providers() {
                 </td>
 
                 <td>
-                  <Link to="/providers/addnew">
+                  <Link to="/providers/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -78,7 +78,7 @@ function Providers() {
                 </td>
 
                 <td>
-                  <Link to="/providers/addnew">
+                  <Link to="/providers/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -98,7 +98,7 @@ function Providers() {
                 </td>
 
                 <td>
-                  <Link to="/providers/addnew">
+                  <Link to="/providers/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -118,7 +118,7 @@ function Providers() {
                 </td>
 
                 <td>
-                  <Link to="/providers/addnew">
+                  <Link to="/providers/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -138,7 +138,7 @@ function Providers() {
                 </td>
 
                 <td>
-                  <Link to="/providers/addnew">
+                  <Link to="/providers/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -158,7 +158,7 @@ function Providers() {
                 </td>
 
                 <td>
-                  <Link to="/providers/addnew">
+                  <Link to="/providers/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>

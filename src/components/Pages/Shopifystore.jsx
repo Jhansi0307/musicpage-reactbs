@@ -23,7 +23,7 @@ function Shopifystore() {
           <span>
             <img src={shopify_icon} className="sizeofapp mr-4" />
             Shopify Stores
-            <Link to="/shopify/addnew">
+            <Link to="/shopify/add">
               <Button className="btnprops">Add new</Button>
             </Link>
             <input type="search" placeholder="Search" className="inputstyle4" />
@@ -59,7 +59,7 @@ function Shopifystore() {
                 </td>
 
                 <td>
-                  <Link to="/shopify/addnew">
+                  <Link to="/shopify/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -78,27 +78,7 @@ function Shopifystore() {
                   <Link to="/shopify/viewshopify">10342</Link>
                 </td>
                 <td>
-                  <Link to="/shopify/addnew">
-                    <Button className="btnedit">Edit</Button>
-                  </Link>
-                </td>
-              </tr>
-              <tr>
-                <td className="appname">
-                  {" "}
-                  <Link to="/shopify/viewshopify">Store name</Link>
-                </td>
-                <td>
-                  {" "}
-                  <Link to="/shopify/viewshopify">1</Link>
-                </td>
-                <td>
-                  {" "}
-                  <Link to="/shopify/viewshopify">10342</Link>
-                </td>
-
-                <td>
-                  <Link to="/shopify/addnew">
+                  <Link to="/shopify/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -118,7 +98,7 @@ function Shopifystore() {
                 </td>
 
                 <td>
-                  <Link to="/shopify/addnew">
+                  <Link to="/shopify/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -138,7 +118,7 @@ function Shopifystore() {
                 </td>
 
                 <td>
-                  <Link to="/shopify/addnew">
+                  <Link to="/shopify/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>
@@ -158,7 +138,27 @@ function Shopifystore() {
                 </td>
 
                 <td>
-                  <Link to="/shopify/addnew">
+                  <Link to="/shopify/add">
+                    <Button className="btnedit">Edit</Button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td className="appname">
+                  {" "}
+                  <Link to="/shopify/viewshopify">Store name</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">1</Link>
+                </td>
+                <td>
+                  {" "}
+                  <Link to="/shopify/viewshopify">10342</Link>
+                </td>
+
+                <td>
+                  <Link to="/shopify/add">
                     <Button className="btnedit">Edit</Button>
                   </Link>
                 </td>

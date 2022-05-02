@@ -12,7 +12,7 @@ export default function Applications() {
         <span>
           <img src={app_icon} className="sizeofapp mr-4" />
           Applications
-          <Link to="/applications/addnew">
+          <Link to="/applications/add">
             <Button className="btnprops">Add new</Button>
           </Link>
           <input type="search" placeholder="Search" className="inputstyle" />
@@ -61,7 +61,7 @@ export default function Applications() {
             </td>
 
             <td>
-              <Link to="/applications/addnew">
+              <Link to="/applications/add">
                 <Button className="btnedit">Edit</Button>
               </Link>
             </td>
@@ -92,7 +92,7 @@ export default function Applications() {
             </td>
 
             <td>
-              <Link to="/applications/addnew">
+              <Link to="/applications/add">
                 <Button className="btnedit">Edit</Button>
               </Link>
             </td>
@@ -123,7 +123,7 @@ export default function Applications() {
             </td>
 
             <td>
-              <Link to="/applications/addnew">
+              <Link to="/applications/add">
                 <Button className="btnedit">Edit</Button>
               </Link>
             </td>
@@ -154,7 +154,7 @@ export default function Applications() {
             </td>
 
             <td>
-              <Link to="/applications/addnew">
+              <Link to="/applications/add">
                 <Button className="btnedit">Edit</Button>
               </Link>
             </td>
@@ -185,7 +185,7 @@ export default function Applications() {
             </td>
 
             <td>
-              <Link to="/applications/addnew">
+              <Link to="/applications/add">
                 <Button className="btnedit">Edit</Button>
               </Link>
             </td>
@@ -216,7 +216,7 @@ export default function Applications() {
             </td>
 
             <td>
-              <Link to="/applications/addnew">
+              <Link to="/applications/add">
                 <Button className="btnedit">Edit</Button>
               </Link>
             </td>
