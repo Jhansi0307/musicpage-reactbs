@@ -82,10 +82,10 @@ function SideBar() {
           <Accordion activeKey={selectedSection}>
             <Accordion.Item eventKey="0">
               <Accordion.Header className="dashboardtext pt-3 ">
-                <Nav.Link href="/dashboard">
+                <Link to="/dashboard">
                   <img src={dashboard_icon} className="sizeoflshopify mr-4 " />
                   Dashboard
-                </Nav.Link>
+                </Link>
               </Accordion.Header>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
