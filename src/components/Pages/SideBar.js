@@ -89,7 +89,7 @@ function SideBar() {
               </Accordion.Header>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header className="dashboardtext pt-1">
+              <Accordion.Header className="dashboardtext accordionbody1">
                 <Link to="/applications" className="mr-2">
                   <img src={application_icon} className="sizeoflshopify mr-4" />
                   Applications
@@ -103,7 +103,7 @@ function SideBar() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-              <Accordion.Header className="dashboardtext pt-1">
+              <Accordion.Header className="dashboardtext accordionbody1">
                 <Link to="/shopify" className="ml-1">
                   <img
                     src={shopify_icon}
@@ -121,7 +121,7 @@ function SideBar() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header className="dashboardtext pt-1 ">
+              <Accordion.Header className="dashboardtext accordionbody1 ">
                 <img src={provider_icon} className="sizeoflshopify mr-2" />
                 <Link to="/authenticationproviders">
                   Authentication Providers
@@ -139,13 +139,13 @@ function SideBar() {
 
             <Accordion.Item eventKey="4">
               <Link to="/providers" className="mr-5">
-                <Accordion.Header className="dashboardtext pt-1">
+                <Accordion.Header className="dashboardtext accordionbody">
                   <img src={provider_icon} className="sizeoflshopify mr-4" />
                   Providers
                 </Accordion.Header>
               </Link>
 
-              <Accordion.Body className="navitem navitem1">
+              <Accordion.Body className="navitem">
                 <Link to="/providers">All Providers</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
