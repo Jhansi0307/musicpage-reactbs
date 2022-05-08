@@ -17,6 +17,7 @@ import ViewShopify from "../Pages/ViewShopify";
 import ViewAuthentication from "../Pages/ViewAuthentication";
 import ViewApplication from "../Pages/ViewApplication";
 import ViewProviders from "../Pages/ViewProviders";
+import EditProvider from "../Pages/EditProvider";
 const Content = ({ sidebarIsOpen, toggleSidebar }) => (
   <Container
     fluid
@@ -65,6 +66,7 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
       <Route exact path="/providers" element={<Providers />} />
       <Route exact path="/providers/viewall" element={<Providers />} />
       <Route exact path="/providers/add" element={<ProvidersAddnew />} />
+      <Route exact path="/providers/edit" element={<EditProvider/>} />
       <Route
         exact
         path="/providers/viewproviders"

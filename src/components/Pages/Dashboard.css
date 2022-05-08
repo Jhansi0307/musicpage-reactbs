@@ -23,14 +23,7 @@ body{
     width: 50%;
     padding: 11px;
   }
-  Button {
-    height: 50px !important;
-    width: 190px !important;
-    color: white;
-    
-    background-color: rgb(10, 10, 10);
   
-  }
   
   .btncolor {
     background-color: rgba(20, 190, 228, 0.892);
@@ -203,14 +196,6 @@ body{
     width: 50%;
     padding: 11px;
   }
-  Button {
-    height: 50px !important;
-    width: 190px !important;
-    color: white;
-    
-    background-color: rgb(10, 10, 10);
-  
-  }
   
   .btncolor {
     background-color: rgba(20, 190, 228, 0.892);
@@ -297,9 +282,9 @@ body{
   
     color:black !important;
   }
-  .margintext2:hover{
+  /* .margintext2:hover{
     background-color:white !important;
-  }
+  } */
   .authentext{
     background-color:rgba(20, 190, 228, 0.892);
     margin-left:135px !important;
@@ -332,9 +317,9 @@ body{
     height:40px !important;
     color:black !important;
   }
-  .margintext3:hover{
+  /* .margintext3:hover{
     background-color:white !important;
-  }
+  } */
   .margintext4{
     background-color:white;
     border:1px solid grey !important;
@@ -375,7 +360,7 @@ body{
   Button {
     height: 50px !important;
     width: 190px !important;
-    color: white;
+    color: rgb(3, 3, 3);
     
     background-color: rgb(10, 10, 10);
   
@@ -386,22 +371,25 @@ body{
     height: 40px;
     width: 100px;
   }
-  .btncolor:hover {
-    background-color: rgba(20, 190, 228, 0.892);
-  }
   
   .btnproperty {
-    background-color: rgb(104, 208, 243);
+    background-color: rgba(104, 208, 243, 0.751);
     color: black;
-    width: 100px;
-    height: 40px;
+    width: 80px !important;
+    height: 100px;
+  
     border: 1px solid rgb(221, 202, 202);
     text-decoration: none;
   }
-  .btnproperty:hover {
-    background-color: rgba(20, 190, 228, 0.892);
-   
-  }
+ 
+  
+
+
+
+/* 
+  variant="info"
+  href="/applications/viewall"
+  style={{ backgroundcolor: "#66D6FF", "margin-left": "200px" }} */
   
   .spacetobtn {
     margin-right: 10px;
@@ -454,9 +442,9 @@ body{
     color:black !important;
     padding:5px;
   }
-  .margintext1:hover{
+  /* .margintext1:hover{
     background-color:white !important;
-  }
+  } */
   .margintext2{
     margin-left:345px !important;
     width:70px !important;
@@ -466,9 +454,9 @@ body{
   
     color:black !important;
   }
-  .margintext2:hover{
+  /* .margintext2:hover{
     background-color:white !important;
-  }
+  } */
   .authentext{
     background-color:rgba(20, 190, 228, 0.892);
     margin-left:135px !important;
@@ -501,9 +489,9 @@ body{
     height:40px !important;
     color:black !important;
   }
-  .margintext3:hover{
+  /* .margintext3:hover{
     background-color:white !important;
-  }
+  } */
   .margintext4{
     background-color:white;
     border:1px solid grey !important;
@@ -512,9 +500,9 @@ body{
     height:40px !important;
     color:black !important;
   }
-  .margintext4:hover{
+  /* .margintext4:hover{
     background-color:white !important;
-  }
+  } */
 
 
   .dashboard-bg {
@@ -541,8 +529,7 @@ body{
   Button {
     height: 50px !important;
     width: 190px !important;
-    color: white;
-    
+    color: black;
     background-color: rgb(10, 10, 10);
   
   }
@@ -608,7 +595,7 @@ body{
     padding:5px;
   }
   .margintext1:hover{
-    background-color:white !important;
+    /* background-color:white !important; */
   }
   .margintext2{
     margin-left:310px !important;
@@ -620,7 +607,7 @@ body{
     color:black !important;
   }
   .margintext2:hover{
-    background-color:white !important;
+    /* background-color:white !important; */
   }
   .authentext{
 
@@ -664,10 +651,10 @@ body{
     color:black !important;
   }
   .margintext3:hover{
-    background-color:white !important;
+    /* background-color:white !important; */
   }
   .margintext4{
-    background-color:white !important;
+    /* background-color:white !important; */
     border:1px solid grey !important;
     margin-left:320px !important;
     width:70px !important;
@@ -681,3 +668,50 @@ body{
 
 
 
+
+
+  .viewall{
+    background-color: #66D6FF !important;
+    color:black;
+    border-style: none !important;
+    width: 80px !important;
+    height: 40px !important;
+    margin-left:198px !important;
+ 
+    text-decoration: none;
+  }
+  .viewallauthen{
+
+      background-color: #66D6FF !important;
+      color:black;
+      border-style: none !important;
+      width: 80px !important;
+      height: 40px !important;
+      margin-left:85px !important;
+   
+      text-decoration: none;
+    
+  }
+  .viewallprovider{
+    background-color: #66D6FF !important;
+    color:black;
+    border-style: none !important;
+    width: 80px !important;
+    height: 40px !important;
+    margin-left:243px !important;
+ 
+    text-decoration: none;
+  }
+
+  #root > div > div.content.container-fluid > div > div > div.row.row-cols-lg-8.row-cols-md-2.row-cols-2 > div:nth-child(1) > a > button:hover{
+    color:black;
+  }
+  #root > div > div.content.container-fluid > div > div > div.row.row-cols-lg-8.row-cols-md-2.row-cols-2 > div:nth-child(2) > a > button:hover{
+    color:black;
+  }
+  #root > div > div.content.container-fluid > div > div > div:nth-child(5) > div:nth-child(1) > a > button:hover{
+    color:black;
+  }
+  #root > div > div.content.container-fluid > div > div > div:nth-child(5) > div:nth-child(2) > a > button:hover{
+    color:black;
+  }

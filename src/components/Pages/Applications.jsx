@@ -13,7 +13,7 @@ export default function Applications() {
           <img src={app_icon} className="sizeofapp mr-4" />
           Applications
           <Link to="/applications/add">
-            <Button className="btnprops">Add new</Button>
+            <Button className="btnprops" >Add new</Button>
           </Link>
           <input type="search" placeholder="Search" className="inputstyle" />
           <IoSearchCircle className="pt-1" />

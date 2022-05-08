@@ -27,3 +27,12 @@
 #root > div > div.content.container-fluid > div > form > div:nth-child(4) > a > button:hover{
     background-color:white !important;
 }
+.label-container{
+    margin-left: 250px;
+}
+.btnmargin{
+    margin-left: -47px !important;
+}
+.btnedit{
+    background-color: white !important;
+}

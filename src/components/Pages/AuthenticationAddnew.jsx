@@ -76,13 +76,13 @@ function AuthenticationAddnew() {
           </Form.Group>
           <div>
             <Link to="/authenticationproviders">
-            <Button className="btnsize btnedit" type="submit">
+            <Button className="btnprops1" type="submit">
               Cancel
             </Button>
             </Link>
             <Button
-              className="ml-3 mr-5 btnsize1"
-              variant="primary"
+              className="ml-3 mr-5 btnsubmit"
+              variant="info"
               type="submit"
             >
               Save

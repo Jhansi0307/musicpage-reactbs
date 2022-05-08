@@ -65,19 +65,21 @@
     /* opacity: 0.8; */
     /* font-family: Arial; */
 }
-  .btnsize{
-      margin-left:545px !important;
-      height:30px !important;
-      border-style: 1px solid grey !important;
-      width:100px !important;
-     
-      
-  }
-  .btnsize1{
+.btnprops1{
+background-color:white !important;
+border:1px solid grey !important;
+margin-left:580px !important;
+width:70px !important;
+height:40px !important;
+color:black !important;
+}
+
+  .btnsubmit{
     /* margin-left:500px !important; */
-    height:30px !important;
-    width:100px !important;
+    width:70px !important;
+    height:40px !important;
     background-color:rgba(1, 199, 233, 0.862);
+    border-style: none !important;
     color:black
 
     

@@ -39,11 +39,11 @@ function ShopiftStoresAddnew() {
 
         <div>
           <Link to="/shopify">
-          <Button className="btnsize btnedit" type="submit">
+          <Button className="btnprops1" type="submit">
             Cancel
           </Button>
           </Link>
-          <Button className="ml-3 btnsize1" variant="primary" type="submit">
+          <Button className="ml-3 btnsubmit" variant="info" type="submit">
             Save
           </Button>
         </div>

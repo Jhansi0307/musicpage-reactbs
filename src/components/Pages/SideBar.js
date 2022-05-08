@@ -79,7 +79,7 @@ function SideBar() {
           <img src={umg_logo} className="sizeoflogo" />
         </div>
         <div className="side-menu">
-          <Accordion activeKey={selectedSection}>
+          <Accordion className="bsPrefix" activeKey={selectedSection}>
             <Accordion.Item eventKey="0">
               <Accordion.Header className="dashboardtext pt-3 ">
                 <Link to="/dashboard">
@@ -88,68 +88,72 @@ function SideBar() {
                 </Link>
               </Accordion.Header>
             </Accordion.Item>
+
             <Accordion.Item eventKey="1">
-              <Accordion.Header className="dashboardtext accordionbody1">
-                <Link to="/applications" className="mr-2">
-                  <img src={application_icon} className="sizeoflshopify mr-4" />
+              <Accordion.Header className="dashboardtext accordionbody1 ">
+                <Link to="/applications">
+                  <img
+                    src={application_icon}
+                    className="sizeoflshopify mr-4 "
+                  />
                   Applications
                 </Link>
               </Accordion.Header>
               <Accordion.Body className="navitem navitem1">
-                <Link to="/applications">All Applications</Link>
+                <Link to="/applications" className="navtext boldtext">All Applications</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
-                <Link to="/applications/add">Add New</Link>
+                <Link to="/applications/add" className="navtext">Add New</Link>
               </Accordion.Body>
             </Accordion.Item>
+
             <Accordion.Item eventKey="2">
               <Accordion.Header className="dashboardtext accordionbody1">
-                <Link to="/shopify" className="ml-1">
-                  <img
-                    src={shopify_icon}
-                    className="sizeoflshopify mr-4 ml-1"
-                  />
-                  {/* <Link to="/shopify" className="ml-1"> */}
+                <Link to="/shopify" className="ml-3">
+                  <img src={shopify_icon} className="sizeoflshopify mr-4" />
                   Shopify Stores
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem navitem1">
-                <Link to="/shopify">All Shopify Stores</Link>
+              <Accordion.Body className="navitem navitem1 ">
+                <Link to="/shopify"  className="navtext">All Shopify Stores</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
-                <Link to="/shopify/add">Add New</Link>
+                <Link to="/shopify/add"  className="navtext">Add New</Link>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header className="dashboardtext accordionbody1 ">
-                <img src={provider_icon} className="sizeoflshopify mr-2" />
+              <Accordion.Header className="dashboardtext accordionbody1">
+                <img
+                  src={provider_icon}
+                  className=" sizeoflshopify ml-2 mr-3"
+                />
                 <Link to="/authenticationproviders">
                   Authentication Providers
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem navitem1">
-                <Link to="/authenticationproviders">
+              <Accordion.Body className="navitem navitem1 ">
+                <Link to="/authenticationproviders"  className="navtext">
                   All Authentication Providers
                 </Link>
               </Accordion.Body>
-              <Accordion.Body className="navitem">
-                <Link to="/authenticationproviders/add">Add New</Link>
+              <Accordion.Body className="navitem ">
+                <Link to="/authenticationproviders/add"  className="navtext">Add New</Link>
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="4">
-              <Link to="/providers" className="mr-5">
-                <Accordion.Header className="dashboardtext accordionbody">
-                  <img src={provider_icon} className="sizeoflshopify mr-4" />
+              <Accordion.Header className="dashboardtext accordionbody1">
+                <Link to="/providers" className="mr-5">
+                  <img src={provider_icon} className="sizeoflshopify mr-3" />
                   Providers
-                </Accordion.Header>
-              </Link>
+                </Link>
+              </Accordion.Header>
 
               <Accordion.Body className="navitem">
-                <Link to="/providers">All Providers</Link>
+                <Link to="/providers"  className="navtext">All Providers</Link>
               </Accordion.Body>
               <Accordion.Body className="navitem">
-                <Link to="/providers/add">Add New</Link>
+                <Link to="/providers/add"  className="navtext">Add New</Link>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
