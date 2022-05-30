@@ -172,10 +172,10 @@ overflow:auto;
 
 }
 
-#root > div > div.content.container-fluid > div > div:nth-child(1) > h2 > a > button{
+/* #root > div > div.content.container-fluid > div > div:nth-child(1) > h2 > a > button{
   background-color:rgba(0, 225, 255, 0.702);
   border:1px rgba(0, 225, 255, 0.702)  none !important;
  height:30px;
  width:80px;
   color:black !important;
-}
+} */

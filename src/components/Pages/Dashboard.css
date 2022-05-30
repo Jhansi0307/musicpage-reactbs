@@ -590,10 +590,12 @@
    
     margin-left:290px !important;
     height:30px !important;
-    color:black;
-    background-color:white !important;
     width:80px !important;
-    border-style: none;
+    
+    color:black;
+    border:2px solid rgb(185, 181, 181) !important;
+    background-color:white !important;
+    
   
   }
   
