@@ -1,31 +1,80 @@
 .inputstyle1{
     width:150px;
-    border:1px solid grey;
+    border:2px solid grey;
    
     font-size: 20px;
     padding:4px;
-    margin-left:170px !important;
+    margin-left:300px !important;
     height:30px;
 }
-#root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(1) > td:nth-child(9) > a > button:hover{
-    background-color: white !important;
-}
-#root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(2) > td:nth-child(9) > a > button:hover{
-    background-color: white !important;
-}
-#root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(3) > td:nth-child(9) > a > button:hover{
-    background-color: white !important;
-}
-#root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(4) > td:nth-child(9) > a > button:hover{
-    background-color: white !important;
-}
-#root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(5) > td:nth-child(9) > a > button:hover{
-    background-color: white !important;
-}
-#root > div > div.content.container-fluid > div > div > table > tbody > tr:nth-child(6) > td:nth-child(9) > a > button:hover{
-    background-color: white !important;
-}
 
-#root > div > div.content.container-fluid > div > div > form > div:nth-child(10) > a > button:hover{
+
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(9) > button{
     background-color:white !important;
 }
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(3) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(4) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(5) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(6) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(7) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(8) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(9) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(10) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div > div.content.container-fluid > div > div > table > tbody:nth-child(11) > tr:nth-child(1) > td:nth-child(9) > button{
+    background-color:white !important;
+}
+#root > div{
+    background-color:white !important;
+}
+.sizeofsearch1{
+  
+    color:rgb(14, 4, 4) !important;
+    font-size: 44px !important;
+    width:50px !important;
+    margin-top:23px;
+    margin-left:-12px;
+ /* background-color: white; */
+ margin-bottom: 20px !important;
+  
+  }
+  
+  .borderless{
+    border-top-style: hidden !important;
+  }
+.spaceforauthent{
+    margin-bottom:-30px;
+    margin-right:10px;
+    padding:0px;
+}
+h1{
+ 
+    font-weight: normal !important;
+  }
+  .btneditsuthent{
+      margin-left:200px;
+      /* margin-left:70px !important; */
+    width:90px !important;
+    background-color:white;
+    border:2px solid grey !important;
+    height:30px !important;
+  
+    color:black !important;
+      
+      
+  }

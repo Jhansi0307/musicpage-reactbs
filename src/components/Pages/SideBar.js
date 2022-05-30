@@ -18,8 +18,14 @@ import { useLocation } from "react-router-dom";
 import "../../App.css";
 // import "./Sidebar.css"
 // import Subbar from "./Subbar"
-import classNames from "classnames";
+// import classNames from "classnames";
 function SideBar() {
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
+
   const location = useLocation();
   useEffect(() => {
     RouterFun(location.pathname);
@@ -99,12 +105,44 @@ function SideBar() {
                   Applications
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem navitem1">
-                <Link to="/applications" className="navtext boldtext">All Applications</Link>
+              <Accordion.Body className="navtextaddnew navitem1 navtext">
+                <Link
+                  to="/applications"
+                  className={!isActive ? "boldtext" : null}
+                  onClick={toggleClass}
+                >
+                  All Applications
+                </Link>
               </Accordion.Body>
-              <Accordion.Body className="navitem">
-                <Link to="/applications/add" className="navtext">Add New</Link>
+              <Accordion.Body className="navtextaddnew">
+                <Link
+                  to="/applications/add"
+                  className={isActive ? "boldtext" : "normaltext"}
+                  onClick={toggleClass}
+                >
+                  Add New
+                </Link>
               </Accordion.Body>
+              {/* <Accordion.Body >
+                <Link
+                  to="/applications"
+                  id="navtext"
+                  className={!isActive ? "boldtext" : null}
+                  onClick={toggleClass}
+                >
+                  All Applications
+                </Link>
+              </Accordion.Body>
+              <Accordion.Body>
+                <Link
+                  to="/applications/add"
+                  id="navtext"
+                  className={isActive ? "boldtext" : "normaltext"}
+                  onClick={toggleClass}
+                >
+                  Add New
+                </Link>
+              </Accordion.Body> */}
             </Accordion.Item>
 
             <Accordion.Item eventKey="2">
@@ -114,11 +152,23 @@ function SideBar() {
                   Shopify Stores
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem navitem1 ">
-                <Link to="/shopify"  className="navtext">All Shopify Stores</Link>
+              <Accordion.Body className="navtextaddnew navitem1 navtext">
+                <Link
+                  to="/shopify"
+                  className={!isActive ? "boldtext" : null}
+                  onClick={toggleClass}
+                >
+                  All Shopify Stores
+                </Link>
               </Accordion.Body>
-              <Accordion.Body className="navitem">
-                <Link to="/shopify/add"  className="navtext">Add New</Link>
+              <Accordion.Body className="navtextaddnew">
+                <Link
+                  to="/shopify/add"
+                  className={isActive ? "boldtext" : "normaltext"}
+                  onClick={toggleClass}
+                >
+                  Add New
+                </Link>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
@@ -131,13 +181,25 @@ function SideBar() {
                   Authentication Providers
                 </Link>
               </Accordion.Header>
-              <Accordion.Body className="navitem navitem1 ">
-                <Link to="/authenticationproviders"  className="navtext">
+              <Accordion.Body className="navtextaddnew navitem1 navtext">
+                <Link
+                  to="/authenticationproviders"
+                  id="navtext"
+                  className={!isActive ? "boldtextauthent" : null}
+                  onClick={toggleClass}
+                >
                   All Authentication Providers
                 </Link>
               </Accordion.Body>
-              <Accordion.Body className="navitem ">
-                <Link to="/authenticationproviders/add"  className="navtext">Add New</Link>
+              <Accordion.Body className="navtextaddnew">
+                <Link
+                  to="/authenticationproviders/add"
+                  id="navtext"
+                  className={isActive ? "boldtextauthent" : "normaltext"}
+                  onClick={toggleClass}
+                >
+                  Add New
+                </Link>
               </Accordion.Body>
             </Accordion.Item>
 
@@ -149,11 +211,26 @@ function SideBar() {
                 </Link>
               </Accordion.Header>
 
-              <Accordion.Body className="navitem">
-                <Link to="/providers"  className="navtext">All Providers</Link>
+              <Accordion.Body className="navtextaddnew navitem1 navtext">
+                <Link
+                  exact
+                  to="/providers"
+                  id="navtext"
+                  className={!isActive ? "boldtext" : null}
+                  onClick={toggleClass}
+                >
+                  All Providers
+                </Link>
               </Accordion.Body>
-              <Accordion.Body className="navitem">
-                <Link to="/providers/add"  className="navtext">Add New</Link>
+              <Accordion.Body className="navtextaddnew">
+                <Link
+                  to="/providers/add"
+                  id="navtext"
+                  className={isActive ? "boldtext" : "normaltext"}
+                  onClick={toggleClass}
+                >
+                  Add New
+                </Link>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

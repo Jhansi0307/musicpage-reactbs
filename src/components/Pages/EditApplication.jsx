@@ -1,56 +1,80 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import app_icon from "../images/Group 203@2x.png";
 import { Form, Button, ButtonGroup } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-function ApplicationAddnew() {
+function EditApplication(props) {
+  const params = useParams();
   const navigate = useNavigate();
-  const [app, setApp] = useState({
+
+  const [editApp, setEditApp] = useState({
     name: "",
     clientid: "",
     clientsecret: "",
     redirecturl: "",
     state: "",
   });
+  
+  console.log(params.edit);
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8000/getapp/${params.edit}`)
+      .then((response) => {
+        setEditApp(response.data);
+        console.log(response.data);
+      });
+  }, []);
+
   const nameHandler = (event) => {
-    setApp((e) => {
-      return { ...e, name: event.target.value };
-    });
+    setEditApp((e) => ({
+      ...e,
+      name: event.target.value,
+    }));
   };
   const clientHandler = (event) => {
-    setApp((e) => {
-      return { ...e, clientid: event.target.value };
-    });
+    setEditApp((e) => ({
+      ...e,
+      clientid: event.target.value,
+    }));
   };
 
   const clientsecretHandler = (event) => {
-    setApp((e) => {
-      return { ...e, clientsecret: event.target.value };
-    });
+    setEditApp((e) => ({
+      ...e,
+      clientsecret: event.target.value,
+    }));
   };
 
   const redirectHandler = (event) => {
-    setApp((e) => {
-      return { ...e, redirecturl: event.target.value };
-    });
+    setEditApp((e) => ({
+      ...e,
+      redirecturl: event.target.value,
+    }));
   };
   const stateHandler = (event) => {
-    setApp((e) => {
-      return { ...e, state: event.target.value };
-    });
+    setEditApp((e) => ({
+      ...e,
+      state: event.target.value,
+    }));
   };
-  const onSubmitApp = async (e) => {
-    e.preventDefault();
-    console.log(app);
-    try {
-      const response = await axios.post("http://localhost:8000/postapp", app);
-      if (response.data) {
-        console.log("Data added successfully");
-      }
-      console.log(response.data);
-    } catch (err) {
-      console.log("data not posted");
-    }
+  const onSubmitApp = (event) => {
+    event.preventDefault();
+    const data = {
+      name: editApp.name,
+      clientid: editApp.clientid,
+      clientsecret: editApp.clientsecret,
+      redirecturl: editApp.redirecturl,
+      state: editApp.state,
+    };
+    axios.put(`http://localhost:8000/updateapp/${params.edit}`, data);
+    setEditApp({
+      name: "",
+      clientid: "",
+      clientsecret: "",
+      redirecturl: "",
+      state: "",
+    });
     navigate("/applications");
   };
 
@@ -59,10 +83,11 @@ function ApplicationAddnew() {
       <h2 className="pr-3 p-2">
         <span>
           <img src={app_icon} className="sizeofapp mr-4" />
-          Add Applications
+          Edit Applications
         </span>
-        <hr style={{ border: "1px solid grey" }} />
+      
       </h2>
+      <hr style={{ border: "1px solid grey" }} />
 
       <div className="editapp">
         <Form>
@@ -74,6 +99,7 @@ function ApplicationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={editApp.name}
               onChange={nameHandler}
             />
           </Form.Group>
@@ -86,6 +112,7 @@ function ApplicationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={editApp.clientid}
               onChange={clientHandler}
             />
           </Form.Group>
@@ -100,6 +127,7 @@ function ApplicationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={editApp.clientsecret}
               onChange={clientsecretHandler}
             />
           </Form.Group>
@@ -111,6 +139,7 @@ function ApplicationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={editApp.redirecturl}
               onChange={redirectHandler}
             />
           </Form.Group>
@@ -122,6 +151,7 @@ function ApplicationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={editApp.state}
               onChange={stateHandler}
             />
           </Form.Group>
@@ -129,7 +159,6 @@ function ApplicationAddnew() {
             <Link to="/applications">
               <Button className="btnprops1">Cancel</Button>
             </Link>
-
             <button className="ml-3 btnsubmit" onClick={onSubmitApp}>
               Save
             </button>
@@ -140,4 +169,4 @@ function ApplicationAddnew() {
   );
 }
 
-export default ApplicationAddnew;
+export default EditApplication;

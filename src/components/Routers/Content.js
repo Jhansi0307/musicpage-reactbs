@@ -18,6 +18,9 @@ import ViewAuthentication from "../Pages/ViewAuthentication";
 import ViewApplication from "../Pages/ViewApplication";
 import ViewProviders from "../Pages/ViewProviders";
 import EditProvider from "../Pages/EditProvider";
+import EditShopifystore from "../Pages/EditShopifystore";
+import EditApplication from "../Pages/EditApplication";
+import EditAuthentication from "../Pages/EditAuthentication";
 const Content = ({ sidebarIsOpen, toggleSidebar }) => (
   <Container
     fluid
@@ -31,18 +34,20 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
       <Route exact path="/applications" element={<Applications />} />
       <Route exact path="/applications/viewall" element={<Applications />} />
       <Route exact path="/applications/add" element={<ApplicationAddnew />} />
+      <Route exact path="/applications/edit/:edit" element={<EditApplication />} />
 
       <Route
         exact
-        path="/applications/viewapplications"
+        path="/applications/view/:viewapplications"
         element={<ViewApplication />}
       />
 
       <Route exact path="/shopify" element={<Shopify />} />
       <Route exact path="/shopify/viewall" element={<Shopify />} />
       <Route exact path="/shopify/add" element={<ShopifyStoresAddnew />} />
+      <Route exact path="/shopify/edit/:edit" element={<EditShopifystore />} />
 
-      <Route exact path="/shopify/viewshopify" element={<ViewShopify />} />
+      <Route exact path="/shopify/view/:viewshopify" element={<ViewShopify />} />
       <Route
         exact
         path="/authenticationproviders"
@@ -60,16 +65,22 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
       />
       <Route
         exact
-        path="/authenticationproviders/viewauthentication"
+        path="/authenticationproviders/edit/:edit"
+        element={<EditAuthentication />}
+      />
+
+      <Route
+        exact
+        path="/authenticationproviders/view/:viewauthentication"
         element={<ViewAuthentication />}
       />
       <Route exact path="/providers" element={<Providers />} />
       <Route exact path="/providers/viewall" element={<Providers />} />
       <Route exact path="/providers/add" element={<ProvidersAddnew />} />
-      <Route exact path="/providers/edit" element={<EditProvider/>} />
+      <Route exact path="/providers/edit/:edit" element={<EditProvider />} />
       <Route
         exact
-        path="/providers/viewproviders"
+        path="/providers/view/:viewproviders"
         element={<ViewProviders />}
       />
     </Routes>

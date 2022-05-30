@@ -7,25 +7,21 @@ import dashb_icon from "../images/Group 197@2x.png";
 const Dashboard = () => {
   return (
     <>
-      <div className="main-dashboard">
-        <h1 className="pr-3 pb-2  ">
+      <div className="main-dashboard1">
+        <h2 className="pr-3 pb-1  ">
           <span>
             <img src={dashb_icon} className="sizeoflo mr-4" />
             Dashboard
           </span>
-          <hr style={{ border: "1px solid grey" }} />
-        </h1>
+        </h2>
+        <hr style={{ border: "1px solid grey" }} />
 
         <Container>
           <Row xs={2} md={2} lg={8} style={{ backgroundColor: "white" }}>
             <Col>
               <span style={{ fontSize: "20px" }}>Application-Recent</span>
               <Link to="/applications/viewall">
-                <Button
-                  variant="info"
-                  className="viewall"
-      
-                >
+                <Button variant="info" className="viewall">
                   View all
                 </Button>
               </Link>
@@ -34,13 +30,9 @@ const Dashboard = () => {
             <Col>
               <span style={{ fontSize: "20px" }}>Shopify Stores-Recent</span>
               <Link to="/shopify/viewall">
-              <Button
-                  variant="info"
-                  className="viewall"
-      
-                >
-                View all
-              </Button>
+                <Button variant="info" className="viewall">
+                  View all
+                </Button>
               </Link>
               <hr />
             </Col>
@@ -101,26 +93,18 @@ const Dashboard = () => {
                 Authentication Providers-Recent
               </span>
               <Link to="/authenticationproviders/viewall">
-              <Button
-                  variant="info"
-                  className="viewallauthen"
-      
-                >
-                View all
-              </Button>
+                <Button variant="info" className="viewallauthen">
+                  View all
+                </Button>
               </Link>
               <hr />
             </Col>
             <Col>
               <span style={{ fontSize: "20px" }}>Providers-Recent</span>
               <Link to="/providers/viewall">
-              <Button
-                  variant="info"
-                  className="viewallprovider"
-      
-                >
-                View all
-              </Button>
+                <Button variant="info" className="viewallprovider">
+                  View all
+                </Button>
               </Link>
               <hr />
             </Col>

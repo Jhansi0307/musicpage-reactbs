@@ -1,28 +1,4 @@
 
-body{
-  background-color: #fff !important;
-}
-  .dashboard-bg {
-    background-color: #fff !important;
-  }
-  
-  .main-dashboard  {
-    color: #fff;
-    padding-left: 50px;
-    /* padding-right: 50px; */
-    color:black;
-    /* padding-top:-60px !important; */
-    margin:-10px;
-  }
-  .header1 {
-    display: block;
-  }
-  .column {
-    float: left;
-  
-    width: 50%;
-    padding: 11px;
-  }
   
   
   .btncolor {
@@ -120,7 +96,7 @@ body{
   }
   .authentext{
     background-color:rgba(20, 190, 228, 0.892);
-    margin-left:135px !important;
+    margin-left:130px !important;
     height:40px !important;
     width:70px !important;
     border-style: none;
@@ -179,7 +155,21 @@ body{
     background-color: #fff;
   }
   
-  .main-dashboard  {
+  .main-dashboard1 {
+    color: #fff;
+    padding-left: 50px;
+    /* padding-right: 50px; */
+    color:black;
+    /* padding-top:-60px !important; */
+    margin:-10px;
+    /* padding-bottom: -50px !important; */
+    padding-top:2px;
+  }
+  h2{
+    font-weight:200;
+  }
+  
+  .main-dashboard {
     color: #fff;
     padding-left: 50px;
     /* padding-right: 50px; */
@@ -287,7 +277,7 @@ body{
   } */
   .authentext{
     background-color:rgba(20, 190, 228, 0.892);
-    margin-left:135px !important;
+    margin-left:130px !important;
     height:40px !important;
     width:70px !important;
     border-style: none;
@@ -305,7 +295,7 @@ body{
   }
   
   .sizeoflo {
-    height: 40px;
+    height: 30px !important;
     margin-right: 8px;
     margin-left:5px;
   }
@@ -336,18 +326,6 @@ body{
 
 
 
-  .dashboard-bg {
-    background-color: #fff;
-  }
-  
-  .main-dashboard  {
-    color: #fff;
-    padding-left: 50px;
-    /* padding-right: 50px; */
-    color:black;
-    /* padding-top:-60px !important; */
-    margin:-10px;
-  }
   .header1 {
     display: block;
   }
@@ -459,7 +437,7 @@ body{
   } */
   .authentext{
     background-color:rgba(20, 190, 228, 0.892);
-    margin-left:135px !important;
+    margin-left:130px !important;
     height:40px !important;
     width:70px !important;
     border-style: none;
@@ -505,18 +483,7 @@ body{
   } */
 
 
-  .dashboard-bg {
-    background-color: #fff;
-  }
   
-  .main-dashboard  {
-    color: #fff;
-    padding-left: 50px;
-    /* padding-right: 50px; */
-    color:black;
-    /* padding-top:-60px !important; */
-    margin:-10px;
-  }
   .header1 {
     display: block;
   }
@@ -590,33 +557,29 @@ body{
     width:70px !important;
     height:40px !important;
     background-color:white;
-    border:1px solid rgb(141, 139, 139) !important;
+    border:2px solid rgb(185, 181, 181) !important;
     color:black !important;
     padding:5px;
   }
-  .margintext1:hover{
-    /* background-color:white !important; */
-  }
+ 
   .margintext2{
     margin-left:310px !important;
     width:80px !important;
     background-color:white;
-    border:1px solid grey !important;
-    height:40px !important;
+    border:2px solid rgb(185, 181, 181) !important;
+    height:30px !important;
   
     color:black !important;
   }
-  .margintext2:hover{
-    /* background-color:white !important; */
-  }
+ 
   .authentext{
 
     margin-left:155px !important;
-    height:40px !important;
+    height:30px !important;
     width:80px !important;
     
     color:black;
-    border:1px solid grey !important;
+    border:2px solid rgb(185, 181, 181) !important;
     background-color:white !important;
     
   }
@@ -624,9 +587,9 @@ body{
     color:black !important;
   }
   .providertext{
-    border:1px solid grey !important;
+   
     margin-left:290px !important;
-    height:40px !important;
+    height:30px !important;
     color:black;
     background-color:white !important;
     width:80px !important;
@@ -644,21 +607,19 @@ body{
   }
   .margintext3{
     background-color:white;
-    border:1px solid grey !important;
+    border:2px solid rgb(185, 181, 181) !important;
     margin-left:240px !important;
     width:80px !important;
-    height:40px !important;
+    height:30px !important;
     color:black !important;
   }
-  .margintext3:hover{
-    /* background-color:white !important; */
-  }
+ 
   .margintext4{
     /* background-color:white !important; */
-    border:1px solid grey !important;
+    border:2px solid rgb(185, 181, 181) !important;
     margin-left:320px !important;
     width:70px !important;
-    height:40px !important;
+    height:30px !important;
     color:black !important;
   }
   .margintext4:hover{
@@ -675,7 +636,7 @@ body{
     color:black;
     border-style: none !important;
     width: 80px !important;
-    height: 40px !important;
+    height: 30px !important;
     margin-left:198px !important;
  
     text-decoration: none;
@@ -686,7 +647,7 @@ body{
       color:black;
       border-style: none !important;
       width: 80px !important;
-      height: 40px !important;
+      height: 30px !important;
       margin-left:85px !important;
    
       text-decoration: none;
@@ -697,7 +658,7 @@ body{
     color:black;
     border-style: none !important;
     width: 80px !important;
-    height: 40px !important;
+    height: 30px !important;
     margin-left:243px !important;
  
     text-decoration: none;

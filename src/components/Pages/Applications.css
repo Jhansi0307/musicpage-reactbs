@@ -18,11 +18,11 @@
   }
   .inputstyle{
       width:150px;
-      border:1px solid grey;
+      border:2px solid grey;
      
       font-size: 20px;
       padding:4px;
-      margin-left:400px !important;
+      margin-left:525px !important;
       height:30px;
 
   }
@@ -34,11 +34,11 @@
   }
 
   .btnedit{
-    margin-left:100px !important;
+    margin-left:70px !important;
     width:90px !important;
     background-color:white;
-    border:1px solid grey !important;
-    height:40px !important;
+    border:2px solid grey !important;
+    height:30px !important;
   
     color:black !important;
   }
@@ -62,6 +62,7 @@
   .textspace1{
     /* margin-left: 252px ; */
     font-weight: bold;
+    margin-bottom: 20px;
     /* opacity: 0.8; */
     /* font-family: Arial; */
 }
@@ -123,12 +124,58 @@ background-color:white !important;
                 background-color:white !important;
                   }
  #root > div > div.content.container-fluid > div > table > tbody > tr:nth-child(6) > td:nth-child(7) > a > button:hover{
-                    background-color:white !important;
-                      }
-                          
+ background-color:white !important;
+  }
+ #root > div > div.content.container-fluid > div > div > form > div:nth-child(7) > a > button:hover{
+ background-color:white !important;
+ }
+
+ .sizeofsearch{
+  
+   color:rgb(14, 4, 4) !important;
+   font-size: 44px !important;
+   width:50px !important;
+   margin-top:23px;
+   
+   margin-left:-8px;
+/* background-color: white; */
+   margin-bottom: 21px !important;
+   /* margin-bottom: -2px !important; */
+ 
+ }
+ .borderless{
+  border-top-style: hidden !important;
+}
+#marginleft{
+  margin-left: 300px;
+}
+.spinner{
+ 
+  margin-left:150px;
+ 
+}
 
 
+.inputstyle4{
+  width:150px;
+  border:2px solid grey;
+ 
+  font-size: 20px;
+  padding:4px;
+  margin-left:460px !important;
+  height:30px;
+}
+.scrollbar{
+  float: left;
+/* width: 1000px; */
+overflow:auto;
 
-                      #root > div > div.content.container-fluid > div > div > form > div:nth-child(7) > a > button:hover{
-                        background-color:white !important;
-                      }
+}
+
+#root > div > div.content.container-fluid > div > div:nth-child(1) > h2 > a > button{
+  background-color:rgba(0, 225, 255, 0.702);
+  border:1px rgba(0, 225, 255, 0.702)  none !important;
+ height:30px;
+ width:80px;
+  color:black !important;
+}

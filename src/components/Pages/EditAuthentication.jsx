@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import provider_icon from "../images/Group 219.png";
 import { Form, Button } from "react-bootstrap";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-function AuthenticationAddnew() {
+function EditAuthentication() {
   const params = useParams();
   const navigation = useNavigate();
+  const [check, setCheck] = useState("True");
   const [authent, setAuthent] = useState({
     name: "",
     providerid: "",
@@ -15,68 +16,94 @@ function AuthenticationAddnew() {
     global: "",
     state: "",
   });
-
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8000/getauthent/${params.edit}`)
+      .then((response) => {
+        setAuthent(response.data);
+      });
+  }, []);
+  console.log(authent.global);
   const nameHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, name: event.target.value };
-    });
+    setAuthent((e) => ({
+      ...e,
+      name: event.target.value,
+    }));
   };
   const providerHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, providerid: event.target.value };
-    });
+    setAuthent((e) => ({
+      ...e,
+      providerid: event.target.value,
+    }));
   };
   const clientHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, clientid: event.target.value };
-    });
+    setAuthent((e) => ({
+      ...e,
+      clientid: event.target.value,
+    }));
   };
 
   const clientsecretHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, clientsecret: event.target.value };
-    });
+    setAuthent((e) => ({
+      ...e,
+      clientsecret: event.target.value,
+    }));
   };
 
   const authentidHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, authentid: event.target.value };
-    });
+    setAuthent((e) => ({
+      ...e,
+      authentid: event.target.value,
+    }));
   };
   const globalHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, global: event.target.value };
-    });
+    if (event.target.value === "true") {
+      setAuthent((e) => ({
+        ...e,
+        global: "false",
+      }));
+    } else {
+      setAuthent((e) => ({
+        ...e,
+        global: "true",
+      }));
+    }
   };
   const stateHandler = (event) => {
-    setAuthent((e) => {
-      return { ...e, state: event.target.value };
-    });
+    setAuthent((e) => ({
+      ...e,
+      state: event.target.value,
+    }));
   };
-  const onSubmitauthent = async (e) => {
-    e.preventDefault();
-    console.log(authent);
-    try {
-      const response = await axios.post(
-        "http://localhost:8000/postauthent",
-        authent
-      );
-      if (response.data) {
-        console.log("Data added successfully");
-      }
-      console.log(response.data);
-    } catch (err) {
-      console.log("data not posted");
-    }
+  const onSubmitAuthent = (event) => {
+    event.preventDefault();
+    const data = {
+      name: authent.name,
+      clientid: authent.clientid,
+      clientsecret: authent.clientsecret,
+      providerid: authent.providerid,
+      authentid: authent.authentid,
+      global: authent.global,
+      state: authent.state,
+    };
+    axios.put(`http://localhost:8000/updateauthent/${params.edit}`, data);
+    setAuthent({
+      name: "",
+      providerid: "",
+      authentid: "",
+      clientid: "",
+      clientsecret: "",
+      global: "",
+      state: "",
+    });
     navigation("/authenticationproviders");
   };
-
   return (
     <div className="main-dashboard">
       <h2 className="pr-3 p-2">
         <span>
           <img src={provider_icon} className="sizeofapp mr-4" />
-          Add/Edit Authentication Provider
+         Edit Authentication Provider
         </span>
         <hr style={{ border: "1px solid grey", marginBottom: -20 }} />
       </h2>
@@ -90,6 +117,7 @@ function AuthenticationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={authent.name}
               onChange={nameHandler}
             />
           </Form.Group>
@@ -102,6 +130,7 @@ function AuthenticationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={authent.providerid}
               onChange={providerHandler}
             />
           </Form.Group>
@@ -113,6 +142,7 @@ function AuthenticationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={authent.clientid}
               onChange={clientHandler}
             />
           </Form.Group>
@@ -124,17 +154,19 @@ function AuthenticationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={authent.clientsecret}
               onChange={clientsecretHandler}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Label className="textspace">
               Application IDs
-              <span className="text-muted ml-3"> Enter the application ID</span>
+              <span className="text-muted ml-3"> Enter the authent ID</span>
             </Form.Label>
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={authent.authentid}
               onChange={authentidHandler}
             />
           </Form.Group>
@@ -144,26 +176,29 @@ function AuthenticationAddnew() {
               <span className="text-muted ml-3"> Enter the State</span>
             </Form.Label>
           </Form.Group>
-          <Form.Group>
-            <div className="textspace">
+
+          <div className="textspace">
+            <Form.Group>
               <Form.Check
                 inline
                 label="True"
-                value="true"
                 type="radio"
                 name="global"
+                value={authent.global}
+                checked={authent.global === "true"}
                 onChange={globalHandler}
               />
               <Form.Check
                 inline
                 label="False"
-                value="false"
                 type="radio"
                 name="global"
+                value={authent.global}
+                checked={authent.global === "false"}
                 onChange={globalHandler}
               />
-            </div>
-          </Form.Group>
+            </Form.Group>
+          </div>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Label className="textspace">
               State
@@ -172,6 +207,7 @@ function AuthenticationAddnew() {
             <Form.Control
               className="sizeoflabel"
               type="text"
+              value={authent.state}
               onChange={stateHandler}
             />
           </Form.Group>
@@ -179,11 +215,10 @@ function AuthenticationAddnew() {
             <Link to="/authenticationproviders">
               <Button className="btnprops1">Cancel</Button>
             </Link>
-
             <button
               className="ml-3 mr-5 btnsubmit"
               variant="info"
-              onClick={onSubmitauthent}
+              onClick={onSubmitAuthent}
             >
               Save
             </button>
@@ -194,4 +229,4 @@ function AuthenticationAddnew() {
   );
 }
 
-export default AuthenticationAddnew;
+export default EditAuthentication;

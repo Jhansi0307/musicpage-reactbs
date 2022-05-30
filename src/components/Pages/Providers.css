@@ -1,10 +1,10 @@
 .inputstyle2{
     width:150px;
-    border:1px solid grey;
+    border:2px solid grey;
    
     font-size: 20px;
     padding:4px;
-    margin-left:480px !important;
+    margin-left:540px !important;
     height:30px;
 
 }
@@ -15,11 +15,21 @@
  }
 .nameproperty{
     padding:10px;
+    font-weight: normal;
 }
 #root > div > div.content.container-fluid > div > div > table > thead > tr > th.nameproperty{
-    padding-right:140px;
+    padding-right:220px;
 }
 
+#root > div > div.content.container-fluid > div.p-3 > table > thead > tr > th:nth-child(1){
+    padding-right:220px;
+}
+#root > div > div.content.container-fluid > div.p-3 > table > thead > tr > th:nth-child(2){
+    padding-right:220px;
+}
+#root > div > div.content.container-fluid > div.p-3 > table > thead > tr > th:nth-child(3){
+    padding-right:220px;
+}
 
 .width{
     width:250px;
@@ -36,3 +46,48 @@
 .btnedit{
     background-color: white !important;
 }
+
+
+#root > div > div.content.container-fluid > div.p-3 > table > thead > tr > th:nth-child(2){
+    margin-right:20rem !important;
+}
+
+#root > div > div.content.container-fluid > div.main-dashboard > h1 > span{
+    font-weight: normal !important;
+}
+
+
+/* 
+.input-group {
+    width: auto;
+  }
+  
+  .input-group input,
+  .input-group .form-notch,
+  .input-group .form-notch-trailing {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  .input-group button {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  } */
+
+
+
+  .sizeofsearchproviders{
+  
+    color:rgb(14, 4, 4) !important;
+    font-size: 44px !important;
+    width:50px !important;
+    margin-top:23px;
+    margin-left:-8px;
+ /* background-color: white; */
+ margin-bottom: 20px !important;
+  
+  }
+  .borderless{
+    border-top-style: hidden !important;
+  }
+  

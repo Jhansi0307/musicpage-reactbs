@@ -1,7 +1,20 @@
-import React from "react";
-import { Form } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Col, Container, Form, Row } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 import app_icon from "../images/Group 203@2x.png";
+import axios from "axios";
 function ViewApplication() {
+  const params = useParams();
+  const [state, setState] = useState(null);
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8000/getapp/${params.viewapplications}`)
+      .then((response) => {
+        setState(response.data);
+        console.log(response.data);
+      });
+  }, []);
+  if (!state) return null;
   return (
     <>
       <div className="main-dashboard">
@@ -12,28 +25,47 @@ function ViewApplication() {
         <hr style={{ border: "1px solid grey" }} />
 
         <div className="pt-3">
-          <Form>
-            <Form.Group>
-              <Form.Label  className="textspace1">Name</Form.Label>
-              <Form.Text>Application Name</Form.Text>
+          <Container>
+            <Row xs={2} md={2} lg={8} style={{ backgroundColor: "white" }}>
+              <Col>
+                <div className="textspace1">Name</div>
+                <div>{state.name}</div>
+              </Col>
               <hr />
-              <Form.Label  className="textspace1">ID</Form.Label>
-              <Form.Text>1</Form.Text>
+
+              <Col>
+                <div className="textspace1">ID</div>
+                <div>{state._id}</div>
+              </Col>
+            </Row>
+            <hr />
+            <Row>
+              <Col>
+                <div className="textspace1">ClientID</div>
+                <div>{state.clientid}</div>
+              </Col>
               <hr />
-              <Form.Label  className="textspace1">Client ID</Form.Label>
-              <Form.Text>10342</Form.Text>
+
+              <Col>
+                <div className="textspace1">Client Secret</div>
+                <div>{state.clientsecret}</div>
+              </Col>
+            </Row>
+            <hr />
+            <Row>
+              <Col>
+                <div className="textspace1">Redirect URLs</div>
+                <div>{state.redirecturl}</div>
+              </Col>
               <hr />
-              <Form.Label  className="textspace1">Client Secret</Form.Label>
-              <Form.Text>8892</Form.Text>
-              <hr />
-              <Form.Label  className="textspace1">Redirect URLs</Form.Label>
-              <Form.Text>https://www.umusic.com</Form.Text>
-              <hr />
-              <Form.Label  className="textspace1">State</Form.Label>
-              <Form.Text>active</Form.Text>
-              <hr />
-            </Form.Group>
-          </Form>
+
+              <Col>
+                <div className="textspace1">State</div>
+                <div>{state.state}</div>
+              </Col>
+            </Row>
+            <hr />
+          </Container>
         </div>
       </div>
     </>
