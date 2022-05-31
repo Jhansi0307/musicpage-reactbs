@@ -35,6 +35,7 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
       <Route exact path="/applications/viewall" element={<Applications />} />
       <Route exact path="/applications/add" element={<ApplicationAddnew />} />
       <Route exact path="/applications/edit/:edit" element={<EditApplication />} />
+      <Route exact path="/applications/viewall" element={<Applications />} />
 
       <Route
         exact

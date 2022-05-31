@@ -78,3 +78,6 @@ h1{
       
       
   }
+  #root > div > div.content.container-fluid > div > div > div:nth-child(3) > div:nth-child(1) > a > button{
+      color:black !important;
+  }

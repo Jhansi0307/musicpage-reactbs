@@ -70,7 +70,7 @@ function Applications() {
             <img src={app_icon} className="sizeofapp mr-4" />
             Applications
             <Link to="/applications/add">
-              <Button className="btnprops">Add new</Button>
+              <Button className="btnprops" variant="info">Add new</Button>
             </Link>
             <input
               type="search"
@@ -192,7 +192,7 @@ function Applications() {
             )}
           </Table>
           <hr style={{ position: "relative", marginTop: "-20px" }} />
-          <nav className="d-flex justify-content-end">
+          <nav className="d-flex justify-content-center">
             <ul className="pagination">
               {pages.map((page) => (
                 <li

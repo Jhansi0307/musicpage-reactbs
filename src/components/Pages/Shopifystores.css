@@ -172,3 +172,15 @@
   margin-left: 39px;
   margin-right:-6px;
 }
+#root > div > div.content.container-fluid > div.main-dashboard > h2 > span > a > button{
+  width:85px !important;
+  height:35px !important;
+  background-color:rgba(98, 222, 245, 0.984);
+  border-style:none !important;
+  /* padding-left:80px; */
+  color:black;
+  font-weight: 300;
+}
+#root > div > div.content.container-fluid > div > div > div.row.row-cols-lg-8.row-cols-md-2.row-cols-2 > div:nth-child(2) > div > div:nth-child(2) > a > button{
+  color: black !important;
+}

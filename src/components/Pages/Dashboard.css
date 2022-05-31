@@ -650,7 +650,7 @@
       border-style: none !important;
       width: 80px !important;
       height: 30px !important;
-      margin-left:85px !important;
+      margin-left:170px !important;
    
       text-decoration: none;
     
@@ -677,4 +677,10 @@
   }
   #root > div > div.content.container-fluid > div > div > div:nth-child(5) > div:nth-child(2) > a > button:hover{
     color:black;
+  }
+
+
+
+  #root > div > div.content.container-fluid > div > div > div.row.row-cols-lg-8.row-cols-md-2.row-cols-2 > div:nth-child(1) > div > div:nth-child(2) > a > button{
+    color:black !important;
   }

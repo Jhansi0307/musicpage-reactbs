@@ -172,10 +172,13 @@ overflow:auto;
 
 }
 
-/* #root > div > div.content.container-fluid > div > div:nth-child(1) > h2 > a > button{
-  background-color:rgba(0, 225, 255, 0.702);
-  border:1px rgba(0, 225, 255, 0.702)  none !important;
- height:30px;
- width:80px;
-  color:black !important;
-} */
+#root > div > div.content.container-fluid > div > div:nth-child(1) > h2 > a > button{
+  width:85px !important;
+  height:35px !important;
+  background-color:rgba(98, 222, 245, 0.984);
+  border-style:none !important;
+  /* padding-left:80px; */
+  color:black;
+  font-weight: 300;
+
+}
