@@ -18,7 +18,7 @@ function EditAuthentication() {
   });
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/getauthent/${params.edit}`)
+      .get(`https://umusic-app.herokuapp.com/getauthent/${params.edit}`)
       .then((response) => {
         setAuthent(response.data);
       });

@@ -8,7 +8,7 @@ function ViewAuthentication() {
   const [state, setState] = useState(null);
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/getauthent/${params.viewauthentication}`)
+      .get(`https://umusic-app.herokuapp.com/getauthent/${params.viewauthentication}`)
       .then((response) => {
         setState(response.data);
         console.log(response.data);

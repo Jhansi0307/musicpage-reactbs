@@ -28,7 +28,7 @@ function Authenticationprovider() {
   useEffect(() => {
     const value = async () => {
       const response = await axios.post(
-        "http://localhost:8000/searcheauthent",
+        "https://umusic-app.herokuapp.com/searcheauthent",
         data
       );
       console.log(response.data);
@@ -45,7 +45,7 @@ function Authenticationprovider() {
     setTimeout(() => {
       axios
         .get(
-          `http://localhost:8000/getauthent/${pagination.limit}/${pagination.skip}`
+          `https://umusic-app.herokuapp.com/getauthent/${pagination.limit}/${pagination.skip}`
         )
         .then((res) => {
           console.log(res.data);

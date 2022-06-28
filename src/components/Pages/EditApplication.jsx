@@ -19,7 +19,7 @@ function EditApplication(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/getapp/${params.edit}`)
+      .get(`https://umusic-app.herokuapp.com/getapp/${params.edit}`)
       .then((response) => {
         setEditApp(response.data);
         console.log(response.data);

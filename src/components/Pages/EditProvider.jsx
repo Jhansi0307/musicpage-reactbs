@@ -9,7 +9,7 @@ function EditProvider(props) {
   const params = useParams();
   const navigation = useNavigate();
   useEffect(() => {
-    axios.get(`http://localhost:8000/get/${params.edit}`).then((response) => {
+    axios.get(`https://umusic-app.herokuapp.com/get/${params.edit}`).then((response) => {
       setEditData(response.data);
     });
   }, []);

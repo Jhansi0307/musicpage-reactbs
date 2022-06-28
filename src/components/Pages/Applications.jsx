@@ -32,7 +32,7 @@ function Applications() {
   };
   useEffect(() => {
     const value = async () => {
-      const response = await axios.post("http://localhost:8000/getname", data);
+      const response = await axios.post("https://umusic-app.herokuapp.com/getname", data);
       console.log(response.data);
       console.log(post.count);
       setPost((previous) => ({
@@ -47,7 +47,7 @@ function Applications() {
     setTimeout(() => {
       axios
         .get(
-          `http://localhost:8000/getapp/${pagination.limit}/${pagination.skip}`
+          `https://umusic-app.herokuapp.com/getapp/${pagination.limit}/${pagination.skip}`
         )
         .then((res) => {
           console.log(res.data);

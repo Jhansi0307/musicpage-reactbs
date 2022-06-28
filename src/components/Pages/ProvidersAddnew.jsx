@@ -29,7 +29,7 @@ function ProvidersAddnew() {
     // console.log(value);
     try {
       const response = await axios.post(
-        "http://localhost:8000/post",
+        "https://umusic-app.herokuapp.com/post",
         postvalue
       );
 

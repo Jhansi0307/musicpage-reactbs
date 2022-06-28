@@ -8,7 +8,7 @@ function ViewApplication() {
   const [state, setState] = useState(null);
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/getapp/${params.viewapplications}`)
+      .get(`https://umusic-app.herokuapp.com/getapp/${params.viewapplications}`)
       .then((response) => {
         setState(response.data);
         console.log(response.data);

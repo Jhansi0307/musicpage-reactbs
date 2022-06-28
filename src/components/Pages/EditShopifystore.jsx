@@ -12,7 +12,7 @@ function EditShopify(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/getshopify/${params.edit}`)
+      .get(`https://umusic-app.herokuapp.com/getshopify/${params.edit}`)
       .then((response) => {
         setStore(response.data);
       });

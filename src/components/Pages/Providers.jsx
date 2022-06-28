@@ -27,7 +27,7 @@ function Providers() {
   useEffect(() => {
     const value = async () => {
       const response = await axios.post(
-        "http://localhost:8000/searchprovider",
+        "https://umusic-app.herokuapp.com/searchprovider",
         data
       );
       console.log(response.data);
@@ -43,7 +43,7 @@ function Providers() {
   useEffect(() => {
     setTimeout(() => {
       axios
-        .get(`http://localhost:8000/get/${pagination.limit}/${pagination.skip}`)
+        .get(`https://umusic-app.herokuapp.com/get/${pagination.limit}/${pagination.skip}`)
         .then((res) => {
           console.log(res.data);
           setPost({ count: res.data.count, value: res.data.value });

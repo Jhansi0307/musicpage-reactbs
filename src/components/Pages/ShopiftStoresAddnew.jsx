@@ -31,7 +31,7 @@ function ShopiftStoresAddnew() {
     // console.log(value);
     try {
       const response = await axios.post(
-        "http://localhost:8000/postshopify",
+        "https://umusic-app.herokuapp.com/postshopify",
         postvalue
       );
 

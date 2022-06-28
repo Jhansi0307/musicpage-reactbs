@@ -9,7 +9,7 @@ function ViewProviders(props) {
   const [state1, setState] = useState(null);
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/get/${params.viewproviders}`)
+      .get(`https://umusic-app.herokuapp.com/get/${params.viewproviders}`)
       .then((response) => {
         setState(response.data);
         console.log(response.data);

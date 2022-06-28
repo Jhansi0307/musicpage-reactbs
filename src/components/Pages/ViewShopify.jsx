@@ -9,7 +9,7 @@ function ViewShopify() {
   const [shopify, setShopify] = useState(null);
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/getshopify/${params.viewshopify}`)
+      .get(`https://umusic-app.herokuapp.com/getshopify/${params.viewshopify}`)
       .then((response) => {
         setShopify(response.data);
         console.log(response.data);

@@ -4,7 +4,6 @@ import { Form, Button, ButtonGroup } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 function ApplicationAddnew() {
-  
   const navigate = useNavigate();
   const [app, setApp] = useState({
     name: "",
@@ -14,11 +13,7 @@ function ApplicationAddnew() {
     state: "",
   });
 
-
-  
-
   const nameHandler = (event) => {
-
     setApp((e) => {
       return { ...e, name: event.target.value };
     });
@@ -50,7 +45,10 @@ function ApplicationAddnew() {
     e.preventDefault();
     console.log(app);
     try {
-      const response = await axios.post("http://localhost:8000/postapp", app);
+      const response = await axios.post(
+        "https://umusic-app.herokuapp.com/postapp",
+        app
+      );
       if (response.data) {
         console.log("Data added successfully");
       }
