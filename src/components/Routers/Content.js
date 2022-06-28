@@ -21,6 +21,8 @@ import EditProvider from "../Pages/EditProvider";
 import EditShopifystore from "../Pages/EditShopifystore";
 import EditApplication from "../Pages/EditApplication";
 import EditAuthentication from "../Pages/EditAuthentication";
+// import PaginationCompo from "../Pages/PaginationCompo"
+// import PaginationComponent from "../Pages/PaginationComponent";
 const Content = ({ sidebarIsOpen, toggleSidebar }) => (
   <Container
     fluid
@@ -30,7 +32,9 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
 
     <Routes>
       <Route path="/" element={<Dashboard />} />
+      
       <Route path="/dashboard" element={<Dashboard />} />
+      {/* <Route exact path="/applications" element={<PaginationComponent/>} /> */}
       <Route exact path="/applications" element={<Applications />} />
       <Route exact path="/applications/viewall" element={<Applications />} />
       <Route exact path="/applications/add" element={<ApplicationAddnew />} />

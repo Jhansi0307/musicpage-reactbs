@@ -44,7 +44,7 @@ function ViewShopify() {
               <div className="textspace1">Secret</div>
               <div> {shopify.secret}</div>
 
-              <hr />
+              <hr style={{color: 'black'}}/>
             </Col>
           </Row>
         </Container>

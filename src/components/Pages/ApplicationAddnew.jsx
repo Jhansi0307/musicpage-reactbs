@@ -4,6 +4,7 @@ import { Form, Button, ButtonGroup } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 function ApplicationAddnew() {
+  
   const navigate = useNavigate();
   const [app, setApp] = useState({
     name: "",
@@ -12,11 +13,17 @@ function ApplicationAddnew() {
     redirecturl: "",
     state: "",
   });
+
+
+  
+
   const nameHandler = (event) => {
+
     setApp((e) => {
       return { ...e, name: event.target.value };
     });
   };
+
   const clientHandler = (event) => {
     setApp((e) => {
       return { ...e, clientid: event.target.value };

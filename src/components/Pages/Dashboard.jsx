@@ -13,17 +13,17 @@ const Dashboard = () => {
   const [provider, setProvider] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/getapp").then((response) => {
-      setAppvalue(response.data);
+    axios.get("http://localhost:8000/getapp/3/0").then((response) => {
+      setAppvalue(response.data.value);
     });
-    axios.get("http://localhost:8000/getshopify").then((response) => {
-      setShopify(response.data);
+    axios.get("http://localhost:8000/getshopify/3/0").then((response) => {
+      setShopify(response.data.value);
     });
-    axios.get("http://localhost:8000/getauthent").then((response) => {
-      setAuthent(response.data);
+    axios.get("http://localhost:8000/getauthent/3/0").then((response) => {
+      setAuthent(response.data.value);
     });
-    axios.get("http://localhost:8000/get").then((response) => {
-      setProvider(response.data);
+    axios.get("http://localhost:8000/get/3/0").then((response) => {
+      setProvider(response.data.value);
     });
   }, []);
 

@@ -48,13 +48,37 @@
 }
 
 
-#root > div > div.content.container-fluid > div.p-3 > table > thead > tr > th:nth-child(2){
+/* #root > div > div.content.container-fluid > div.p-3 > table > thead > tr > th:nth-child(2){
     margin-right:20rem !important;
-}
+} */
 
 #root > div > div.content.container-fluid > div.main-dashboard > h1 > span{
     font-weight: normal !important;
 }
+
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(2) > tr > td:nth-child(4) > button{
+    margin-left:320px !important;
+}
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(3) > tr > td:nth-child(4) > button{
+    margin-left:320px !important;
+}
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(4) > tr > td:nth-child(4) > button{
+    margin-left:320px !important;
+}
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(5) > tr > td:nth-child(4) > button{
+    margin-left:320px !important;
+}
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(6) > tr > td:nth-child(4) > button{
+    margin-left:320px !important;
+}
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(7) > tr > td:nth-child(4) > button{
+    margin-left:320px !important;
+}
+#root > div > div.content.container-fluid > div > div > div.table-responsive > table > tbody:nth-child(2) > tr > td:nth-child(3){
+    margin-left:-300px !important;
+}
+
+
 
 
 /* 
@@ -105,4 +129,29 @@
    
   #root > div > div.content.container-fluid > div > div > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > a > button{
       color:black !important;
+  }
+
+  .prevbtn{
+      /* height:30px !important;
+      width:50px !important; */
+      border:1px solid rgb(237, 233, 233) !important;
+      background-color:#76bad3;
+      border:none !important;
+  }
+  .btnedit1{
+      height:40px  !important;
+      width:80px !important;
+      background-color:rgb(48, 202, 241) !important;
+      color:rgb(8, 7, 7);
+    
+      
+  }
+  .pagebtn{
+    height:40px  !important;
+    width:80px !important;
+
+  
+    background-color:grey !important;
+    color:white;
+    border:2px solid rgb(92, 89, 89);
   }
